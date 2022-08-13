@@ -2,6 +2,11 @@ const express = require("express");
 const path = require("path");
 const app = express();
 
+const connectToMongo = require("./db");
+connectToMongo();
+
+app.use(express.json());
+
 // staticpath store the location of frontend directory
 const staticpath = path.join(__dirname, "../frontend");
 

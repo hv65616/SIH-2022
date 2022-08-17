@@ -11,17 +11,21 @@
 
 <body>
     <div id="container1">
-            <!--it is for website logo png-->
+        <!--it is for website logo png-->
         <div id="navigation">
             <!--links to concerned pages-->
             <a href="./aboutus.html">About us</a>
             <a href="./contactus.html">Contact us</a>
             <!--at the top for navigating among pages-->
-            <input type="button" value="Login" id="Login-button" />
-            <input type="button" value="Signup" id="Sign-up-button" />
-            
+            <input type="button" value="Login" id="Login-button"
+                onclick="window.location.href = './official_login.html'" />
+            <input type="button" value="Signup" id="Sign-up-button"
+                onclick="window.location.href='./official_signup.html'" />
+
         </div>
-        <h1 id="homepageheading"><center>Welcome to our portal!</center></h1>
+        <h1 id="homepageheading">
+            <center>Welcome to our portal!</center>
+        </h1>
         <hr style="width: 95%;" />
         <div id="searchbox">
             <div id="search">
@@ -30,9 +34,10 @@
                 <input type="button" value="Search" id="searchbutton" />
             </div>
         </div>
-        
+
 
     </div>
+    
 </body>
 
 </html>

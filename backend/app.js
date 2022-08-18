@@ -20,12 +20,13 @@ app.get("/", (req, res) => {
 app.post("/official_signup", async (req, res) => {
   try {
     const password = req.body.password;
-    const confirmpassword = req.body.confirmPassword;
+    const confirmpassword = req.body.confirmpassword;
     let user_email_check = await User.findOne({ email: req.body.email });
     if (user_email_check) {
       res.send("A user with the same email already exist");
     } else if (password === confirmpassword) {
       const user = new User({
+        universityname: req.body.universityname,
         username: req.body.username,
         email: req.body.email,
         password: req.body.password,

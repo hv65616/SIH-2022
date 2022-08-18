@@ -5,104 +5,104 @@
     box-sizing : border-box;
   } */
 
-  body {
-    background-color: #ffffff;
-    position: relative;
-    height: 115vh;
-    overflow-x: hidden;
-  }
-  
-  #container1 {
-    display: flex;
-    flex-direction: column;
-  }
+body {
+  background-color: #ffffff;
+  position: relative;
+  height: 115vh;
+  overflow-x: hidden;
+}
 
-  #searchbox {
-    position: relative;
-    align-items: center;
-    left: 20vw;
-    right: 20vw;
-  }
+#container1 {
+  display: flex;
+  flex-direction: column;
+}
 
-  #search {
-    position: relative;
-    background-color: lightcyan;
-    height: 50px;
-    width: 60vw;
-    border-radius: 10px;
-    display: flex;
-    top: 10vh;
-    padding: 10px 10px 20px 10px;
-    align-items: center;
-    box-shadow: 0 5px 5px 3px gainsboro;
-  }
+#searchbox {
+  position: relative;
+  align-items: center;
+  left: 20vw;
+  right: 20vw;
+}
 
-  #search > input[type="text"] {
-    height: 35%;
-    margin: 8px 0;
-    border-radius: 5px;
-    padding-left: 10px;
-    font-size: 16px;
-    width: 95%;
-    border: 1.5px solid #eefff0;
-  }
+#search {
+  position: relative;
+  background-color: lightcyan;
+  height: 50px;
+  width: 60vw;
+  border-radius: 10px;
+  display: flex;
+  top: 10vh;
+  padding: 10px 10px 20px 10px;
+  align-items: center;
+  box-shadow: 0 5px 5px 3px gainsboro;
+}
 
-  #Login-button {
-    background-color: #1877f2;
-    color: #ffffff;
-    font-size: 13px;
-    border-radius: 5px;
-    border: none;
-    height: 30px;
-    font-weight: bold;
-    width: 60px;
-    margin-left: 15px;
-  }
-  
-  #Login-button:hover {
-    background-color: #0966df;
-    cursor: pointer;
-  }
+#search>input[type="text"] {
+  height: 35%;
+  margin: 8px 0;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+  width: 95%;
+  border: 1.5px solid #eefff0;
+}
 
-  #Sign-up-button {
-    background-color: #06c55f;
-    color: #ffffff;
-    font-size: 13px;
-    border-radius: 5px;
-    border: none;
-    height: 30px;
-    font-weight: bold;
-    width: 60px;
-    margin-left:15px;
-  }
-  
-  #Sign-up-button:hover {
-    background-color: #029245;
-    cursor: pointer;
-  }
+#Login-button {
+  background-color: #1877f2;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  width: 60px;
+  margin-left: 15px;
+}
 
-  #navigation{
-    position: absolute;
-    background-color: #ffffff;
-    height: 25px;
-    width: 300px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: row;
-    margin-top:10px;
-    margin-left: 70vw;
-    padding: 10px 10px 20px 10px;
-    align-items: center;
-  }
+#Login-button:hover {
+  background-color: #0966df;
+  cursor: pointer;
+}
 
-  #navigation > a {
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 15px;
-    color: #1877f2;
-  }
+#Sign-up-button {
+  background-color: #06c55f;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  width: 60px;
+  margin-left: 15px;
+}
 
-  #homepageheading{
-    margin-top: 150px;
-    font-size: 50px;
-  }
+#Sign-up-button:hover {
+  background-color: #029245;
+  cursor: pointer;
+}
+
+#navigation {
+  position: absolute;
+  background-color: #ffffff;
+  height: 25px;
+  width: 300px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-left: 70vw;
+  padding: 10px 10px 20px 10px;
+  align-items: center;
+}
+
+#navigation>a {
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #1877f2;
+}
+
+#homepageheading {
+  margin-top: 150px;
+  font-size: 50px;
+}

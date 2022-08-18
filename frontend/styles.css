@@ -40,36 +40,26 @@ body {
   border: 1.5px solid #f1f1ef;
 }
 
-
-  #Login-button1 {
-   
-    background-color: #34421E;
-    color: #ffffff;
-    font-size: 13px;
-    border-radius: 5px;
-    border: none;
-    height: 30px;
-    font-weight: bold;
-    width: 60px;
-    margin-left: 15px;
-  }
-
-#Login-button1:hover {
-
-
-  background-color: #0966df;
+#Login-button1 {
 
   background-color: #34421E;
-
-  cursor: pointer;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  width: 60px;
+  margin-left: 15px;
 }
 
 
+#Login-button1:hover {
+  background-color: #34421E;
+  cursor: pointer;
+}
+
 #Sign-up-button1 {
-
-
-  background-color: #06c55f;
-
   background-color: #C19434;
   color: #ffffff;
   font-size: 13px;
@@ -82,12 +72,7 @@ body {
 }
 
 #Sign-up-button1:hover {
-
-
-  background-color: #029245;
-
   background-color: #C19434;
-
   cursor: pointer;
 }
 

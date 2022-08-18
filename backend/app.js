@@ -20,6 +20,7 @@ app.get("/", (req, res) => {
   res.send("Server is runing on PORT:3000");
 });
 
+// POST reqquest 
 app.post("/official_signup", async (req, res) => {
   try {
     const password = req.body.password;
@@ -44,6 +45,7 @@ app.post("/official_signup", async (req, res) => {
   }
 });
 
+// Post Request
 app.post("/official_login", async (req, res) => {
   try {
     const username = req.body.username;

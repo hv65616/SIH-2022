@@ -2,7 +2,10 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const bodyParser = require("body-parser");
+// Official_Signup Schema
 const User = require("./models/official_signup");
+// Official_Login Schema
+const User_Login = require("./models/official_login");
 const connectToMongo = require("./db");
 connectToMongo();
 
@@ -38,6 +41,21 @@ app.post("/official_signup", async (req, res) => {
     }
   } catch (error) {
     res.status(400).send(error);
+  }
+});
+
+app.post("/official_login", async (req, res) => {
+  try {
+    const username = req.body.username;
+    const password = req.body.password;
+    const user = await User_Login.findOne({ username: username });
+    if (user.password === password) {
+      res.send("User Login Successful");
+    } else {
+      res.send("Please enter your correct password");
+    }
+  } catch (error) {
+    res.status(400).send("Invalid");
   }
 });
 

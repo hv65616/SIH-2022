@@ -1,0 +1,44 @@
+input[type=text],input[type=email],input[type=password] {
+    width: 26vw;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus,input[type=email]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  
+  
+  #Sign-up-button2:hover {
+    opacity:1;
+  }
+  
+  
+  #Sign-up-button2 {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 8vw;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 10vw;
+  }
+  
+  #container2 {
+    padding: 16px;
+  }
+
+  #heading2{
+    margin-left: 10vw;
+  }
+
+  #text2{
+    margin-left: 3vw;
+  }

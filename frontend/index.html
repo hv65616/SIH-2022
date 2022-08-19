@@ -12,7 +12,8 @@
 <body>
     <!--<div id="container1">-->
     <div id="container1_1">
-        <div id="container11"><!--This is for the big navigation bar-->
+        <div id="container11">
+            <!--This is for the big navigation bar-->
             <a href="./index.html">
                 <img src="./images/wizardlogo.png" alt="logo1" id="logo1" width="175" height="185">
             </a>
@@ -26,17 +27,17 @@
                     <a href="./aboutus.html">About us</a>
                     <a href="./contactus.html">Contact us</a>
                 </div>
-                
+
                 <!--at the top for navigating among pages-->
                 <input type="button" value="Log In" id="Login-button1"
                     onclick="window.location.href = './official_login.html'" />
                 <input type="button" value="Sign Up" id="Sign-up-button1"
                     onclick="window.location.href='./official_signup.html'" />
 
-                    
+
             </div>
         </div>
-        
+
         <h1 id="homepageheading1">
             <center>Welcome to our portal!</center>
         </h1>
@@ -46,11 +47,15 @@
 
         <hr style="width: 95%;" />
         <div id="searchbox1">
-            <div id="search1">
-                <!--search bar to be placed in center-->
-                <input type="text" placeholder="Search your university" />
-                <input type="button" value="Search" id="searchbutton1" />
-            </div>
+            <form action="/authentic_college" method="GET">
+                <div id="search1">
+                    <!--search bar to be placed in center-->
+                    <input name="universityname" type="text" placeholder="Search your university" />
+                    <!-- <input type="button" value="Search" id="searchbutton1" /> -->
+                    <button id="searchbutton1">Search</button>
+
+                </div>
+            </form>
         </div>
 
     </div>

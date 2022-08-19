@@ -113,4 +113,5 @@ body {
   height: 23px;
   font-weight: bold;
   width: 60px;
+  cursor: pointer;
 }

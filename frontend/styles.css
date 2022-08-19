@@ -150,3 +150,37 @@ body {
 #logo1{
   margin-top: 17px;
 }
+
+#statistics1{
+  height:400px;
+  width:1100px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 900px;
+  left: 150px;
+  background-color: aqua;
+}
+
+.square {
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+
+#sqaure1{
+  background-color: red;
+}
+
+#sqaure2{
+  background-color:orange;
+}
+
+#sqaure3{
+  background-color:green;
+}
+
+#heading1{
+  font-size:30px;
+  margin-left: 58px;
+}

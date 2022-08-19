@@ -3,6 +3,7 @@ const path = require("path");
 const app = express();
 const bodyParser = require("body-parser");
 const fs = require("fs");
+const nodemailer = require('nodemailer');
 // Official_Signup Schema
 const User = require("./models/official_signup");
 // Official_Login Schema
@@ -63,6 +64,35 @@ app.post("/official_login", async (req, res) => {
     res.status(400).send("Invalid");
   }
 });
+
+app.post("/contactus", (req, res) => {
+  console.log(req.body);
+
+  const transporter = nodemailer.createTransport({
+      service: 'gmail',
+      auth: {
+          user: 'asmitwrites@gmail.com',
+          pass: 'qfzjkzkimedjbrgz'
+      }
+  })
+
+  const mailOptions = {
+      from: req.body.email,
+      to: 'hv65616@gmail.com',
+      subject: `Message from ${req.body.email}: ${req.body.subject}`,
+      text: req.body.message
+  }
+
+  transporter.sendMail(mailOptions, (error, info)=>{
+      if(error){
+          console.log(error);
+          res.send('error');
+      }else{
+          console.log('Email sent: ' + info.response);
+          res.send('success');
+      }
+  })
+})
 
 app.listen(3000, (req, res) => {
   console.log("Server started on port 3000");

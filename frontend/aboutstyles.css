@@ -1,0 +1,37 @@
+#heading4{
+  font-size: 70px;
+}
+
+#box4-1{
+  width: 350px;
+  border: 5px solid green;
+  padding: 50px;
+  margin: 50px;
+  margin-top: 80px;
+  margin-left: 150px;
+  height: 300px;
+}
+
+#box4-2{
+  width: 350px;
+  border: 5px solid green;
+  padding: 50px;
+  margin: 50px;
+  margin-top: 80px;
+  margin-left: 900px;
+  height: 300px;
+}
+
+#box4-3{
+  width: 350px;
+  border: 5px solid green;
+  padding: 50px;
+  margin: 50px;
+  margin-top: 80px;
+  margin-left: 150px;
+  height: 300px;
+}
+
+#text4{
+  font-weight: lighter;
+}

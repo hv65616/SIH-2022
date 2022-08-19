@@ -1,4 +1,4 @@
-#card {
+#card6{
     position: relative;
     width: 320px;
     display: block;
@@ -7,7 +7,7 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-#upper-side {
+#upper-side6 {
     padding: 2em;
     background-color: #8BC34A;
     display: block;
@@ -16,13 +16,13 @@
     border-top-left-radius: 8px;
 }
 
-#checkmark {
+#checkmark6 {
     font-weight: lighter;
     fill: #fff;
     margin: -3.5em auto auto 20px;
 }
 
-#status {
+#status6 {
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -31,7 +31,7 @@
     margin-bottom: 0;
 }
 
-#lower-side {
+#lower-side6 {
     padding: 2em 2em 5em 2em;
     background: whitesmoke;
     display: block;
@@ -39,13 +39,13 @@
     border-bottom-left-radius: 8px;
 }
 
-#message {
+#message6 {
     margin-top: -.5em;
     color: #757575;
     letter-spacing: 1px;
 }
 
-#contBtn {
+#contBtn6 {
     position: relative;
     top: 1.5em;
     text-decoration: none;
@@ -63,7 +63,7 @@
     transition: all .4s ease;
 }
 
-#contBtn:hover {
+#contBtn6:hover {
     -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
     -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
     box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);

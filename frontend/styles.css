@@ -1,8 +1,8 @@
 body {
-  background-image: url("images/homepage_img0.jpg");
+  /*background-image: url("images/homepage_img0.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
-  /*background-color: #f1f1ef;*/
+  background-repeat: no-repeat;*/
+  background-color: #f1f1ef;
   position: relative;
   height: 96vh;
   overflow-x: hidden;
@@ -132,7 +132,7 @@ body {
   width: 60px;
   cursor: pointer;
 }
-
+/*container for logo...big one*/
 #container11 {
   position: absolute;
   background-color: #f1f1ef;
@@ -149,4 +149,46 @@ body {
 
 #logo1{
   margin-top: 17px;
+}
+/*for positioning of squares*/
+#statistics1{
+  height: 500px;
+  width:690px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 1100px;
+  left: 100px;
+  /*background-color: aqua;*/
+}
+/*for measurement of squares*/
+.square {
+  position: relative;
+  height: 230px;
+  width: 230px;
+}
+/*for individual squares*/
+#sqaure1{
+
+  background-color: red;
+}
+
+#sqaure2{
+  background-color:orange;
+}
+
+#sqaure3{
+  background-color:green;
+}
+/*for data written inside squares*/
+#heading1{
+  font-size:50px;
+  margin-left: 480px;
+  margin-top: 400px;
+}
+/*for image1_2 in homepgae*/
+#image1_2 {
+  position: absolute;
+  top: 1050px;
+  right: 120px;
 }

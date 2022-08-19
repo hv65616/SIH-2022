@@ -4,7 +4,7 @@
 
 #box4-1{
   width: 350px;
-  border: 5px solid green;
+  /*border: 5px solid green;*/
   padding: 50px;
   margin: 50px;
   margin-top: 80px;
@@ -14,7 +14,7 @@
 
 #box4-2{
   width: 350px;
-  border: 5px solid green;
+  /*border: 5px solid green;*/
   padding: 50px;
   margin: 50px;
   margin-top: 80px;
@@ -24,7 +24,7 @@
 
 #box4-3{
   width: 350px;
-  border: 5px solid green;
+  /*border: 5px solid green;*/
   padding: 50px;
   margin: 50px;
   margin-top: 80px;
@@ -34,4 +34,31 @@
 
 #text4{
   font-weight: lighter;
+  font-size: 20px;
 }
+
+#image4_1{
+  position: absolute;
+  top: 150px;
+  right: 120px;
+}
+
+#image4_2{
+  position: absolute;
+  top: 650px;
+  left: 140px;
+}
+
+#image4_3{
+  position: absolute;
+  top: 1050px;
+  right: 80px;
+}
+
+#contain4 {
+  position: absolute;
+  top:  0px;
+  left: 30px;
+
+}
+

@@ -1,13 +1,22 @@
 body {
-  background-color: #f1f1ef;
+  background-image: url("images/homepage_img0.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*background-color: #f1f1ef;*/
   position: relative;
-  height: 115vh;
+  height: 96vh;
   overflow-x: hidden;
 }
 
-#container1 {
+#container1_1{
   display: flex;
   flex-direction: column;
+}
+
+#container1_1 {
+  background-color: #f1f1ef;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #searchbox1 {

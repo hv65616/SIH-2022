@@ -2,6 +2,7 @@ const express = require("express");
 const path = require("path");
 const app = express();
 const bodyParser = require("body-parser");
+const fs = require("fs");
 // Official_Signup Schema
 const User = require("./models/official_signup");
 // Official_Login Schema
@@ -20,7 +21,7 @@ app.get("/", (req, res) => {
   res.send("Server is runing on PORT:3000");
 });
 
-// POST reqquest 
+// POST reqquest
 app.post("/official_signup", async (req, res) => {
   try {
     const password = req.body.password;
@@ -36,7 +37,9 @@ app.post("/official_signup", async (req, res) => {
         password: req.body.password,
       });
       const official_user = await user.save();
-      res.send("User Registration Successful");
+      res.sendFile(
+        path.join(__dirname, "../frontend/registration_successful.html")
+      );
     } else {
       res.send("Password are not matching");
     }

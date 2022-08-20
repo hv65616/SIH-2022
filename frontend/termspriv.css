@@ -26,7 +26,7 @@ body{
     display: flex;
     flex-direction: row;
     margin-top: 500px;
-    width: 100%;
+    width: 1059px;
     padding: 10px 15%;
     background:#6e7e54;
     color: #f1f1ef;
@@ -35,7 +35,7 @@ body{
   .footer1 div{
     text-align: center;
     flex-grow: 0.2;
-    right:100px;
+    margin-left:100px
   }
   
   .footer1 div h3{
@@ -71,9 +71,11 @@ body{
   }
   */
   .copyright1{
-    padding: 20px 35%;
+    text-align: center;
+    padding: 20px 15%;
     color: #f1f1ef;
     background:#e5c070;
-    width:100%;
+    width:1059px;
+
   }
   

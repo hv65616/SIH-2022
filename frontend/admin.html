@@ -1,8 +1,3 @@
-<!-- Code copied from fake.html -->
-<!-- Work that need to be done on this page:-
-        On navigation bar only the logo will remain all other links and buttons will be removed
-        Create a simple admin login form  the form should display at the centre of the page
--->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,33 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./adminstyles.css">
-    <title>Wizard-Fake Universities</title>
+    <title>Wizard-admin log in</title>
 </head>
 
 <body>
-    <div id="container88">
-        <!--This is for the big navigation bar-->
+    <div id="container10_1"><!--This is for the big navigation bar-->
         <a href="./index.html">
-            <img src="./images/wizardlogo.png" alt="logo8" id="logo8" width="175" height="185">
+            <img src="./images/wizardlogo.png" alt="logo4" id="logo10" width="175" height="185">
         </a>
-        <!--it is for website logo png-->
-        <div id="navigation8">
-            <!--links to concerned pages-->
-            <div id="navigation8-1">
-                <a href="./fake.html">Fake Universities</a>
-            </div>
-            <div id="navigation8-2">
-                <a href="./aboutus.html">About us</a>
-                <a href="./contactus.html">Contact us</a>
-            </div>
-
-            <!--at the top for navigating among pages-->
-            <input type="button" value="Log In" id="Login-button8"
-                onclick="window.location.href = './official_login.html'" />
-            <input type="button" value="Sign Up" id="Sign-up-button8"
-                onclick="window.location.href='./official_signup.html'" />
-
-
+    </div>
+    <div id="contain10">
+        <div id="container10">
+            <h1 id="heading10">Admin Log In</h1>
+            <label for="username10"><b>Username</b></label>
+            <input name="username" type="text" placeholder="Enter your Username" id="username10" required>
+            <label for="password10"><b>Password</b></label>
+            <input name="password" type="password" placeholder="Enter Password" id="password10" required>
+            <button type="submit" id="Loginbutton10">LOG IN</button>
         </div>
     </div>
 </body>

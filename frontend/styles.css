@@ -180,15 +180,50 @@ body {
 #sqaure3{
   background-color:green;
 }
-/*for data written inside squares*/
+/*for data written above sqaure*/
 #heading1{
   font-size:50px;
-  margin-left: 480px;
+  margin-left: 400px;
   margin-top: 400px;
+}
+
+#heading2{
+  font-size:45px;
+  margin-left: 440px;
 }
 /*for image1_2 in homepgae*/
 #image1_2 {
   position: absolute;
-  top: 1050px;
+  top: 970px;
   right: 120px;
 }
+
+#box1-1{
+  width: 350px;
+  /*border: 5px solid green;*/
+  padding: 50px;
+  margin: 50px;
+  margin-top: 550px;
+  margin-left: 150px;
+  height: 250px;
+}
+
+#text1{
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+#box1-2{
+  width: 350px;
+  /*border: 5px solid green;*/
+  padding: 50px;
+  margin: 50px;
+  margin-top: 80px;
+  margin-left: 900px;
+  height: 250px;
+}
+
+#heading1-1{
+  font-size: 25px;
+}
+

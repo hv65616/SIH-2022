@@ -1,0 +1,45 @@
+#container9 {  
+    padding: 50px;
+    margin-left: 280px;  
+}  
+  
+input[type=text], input[type=email], textarea {  
+  width: 800px;  
+  padding: 15px;  
+  margin: 5px 0 22px 0;  
+  display: block;  
+  border: none;  
+  background: #ddd;  
+}  
+input[type=text]:focus, input[type=email]:focus {  
+  background-color: rgb(188, 186, 186);
+  outline: none;
+} 
+
+body{
+    background-color: #f1f1ef;  
+}
+
+#Apply-now9:hover {
+    opacity: 1;
+    -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+    box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+  }
+  
+  
+#Apply-now9 {
+    background-color: #34421e;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    margin-left: 330px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.9;
+    width: 10vw;
+  }

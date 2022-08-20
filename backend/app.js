@@ -9,11 +9,14 @@ const { body, validationResult } = require("express-validator");
 const User = require("./models/official_signup");
 // Official_Login Schema
 const User_Login = require("./models/official_login");
+// Authentic_Colleges Schema
+const Authentic_College = require("./models/authentic_colleges");
 const connectToMongo = require("./db");
 connectToMongo();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.set("view engine", "ejs");
 
 const staticpath = path.join(__dirname, "../frontend");
 
@@ -21,6 +24,19 @@ app.use(express.static(staticpath));
 
 app.get("/", (req, res) => {
   res.send("Server is runing on PORT:3000");
+});
+
+app.get("/authentic_college", (req, res) => {
+  Authentic_College.find(
+    { universityname: req.query.universityname },
+    (err, docs) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("search2", { details: docs });
+      }
+    }
+  );
 });
 
 // POST reqquest

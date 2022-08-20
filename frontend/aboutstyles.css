@@ -195,8 +195,12 @@ body{
 }
 */
 .copyright1{
+
+  padding: 20px 35%;
+
   text-align: center;
   padding: 20px 15%;
+
   color: #f1f1ef;
   background:#e5c070;
   width:1059px;

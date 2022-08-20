@@ -21,3 +21,61 @@ body{
  /*#image7 {
     margin-top: 500px;
  }*/
+
+ .footer1 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 500px;
+    width: 1059px;
+    padding: 10px 15%;
+    background:#6e7e54;
+    color: #f1f1ef;
+  }
+  
+  .footer1 div{
+    text-align: center;
+    flex-grow: 0.2;
+    margin-left:100px
+  }
+  
+  .footer1 div h3{
+    font-weight: 300px;
+    margin-bottom: 30px;
+  }
+  
+  .col_1 a{
+    text-decoration: none;
+    color: #f1f1ef;
+    display:block;
+    margin-bottom: 10px;
+  }
+  /*
+  .social{
+    padding: 30px 15%;
+    
+    
+  }
+  
+  #icons{
+    margin-left: 350px;
+  }
+  
+  .social a{
+    cursor: pointer;
+    color: #f1f1ef;
+    text-decoration: none;
+    margin-left: 50px;
+    font-size: 30px;
+    
+  
+  }
+  */
+  .copyright1{
+    text-align: center;
+    padding: 20px 15%;
+    color: #f1f1ef;
+    background:#e5c070;
+    width:1059px;
+
+  }
+  

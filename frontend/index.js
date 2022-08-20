@@ -1,7 +1,7 @@
 const contactusForm = document.querySelector('.contact-form');
-let name = document.getElementById('name');
-let email = document.getElementById('email');
-let subject = document.getElementById('subject');
+let name = document.getElementById("fullname5");
+let email = document.getElementById("email5");
+let subject = document.getElementById("subject5");
 let message = document.getElementById('message');
 
 contactusForm.addEventListener('submit', (e) => {

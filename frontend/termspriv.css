@@ -2,10 +2,12 @@ body{
     background-color: #f1f1ef;
 }
 
+/*terms and conditions heading*/
 #heading7{
     font-size: 45px;
 }
 
+/*container for complete terms and condition block*/
 #container7{
     height: 300px;
     width: 700px;
@@ -13,6 +15,7 @@ body{
     margin-left: 400px;
 }
 
+/*container for points*/
 #container7_1{
     padding: 20px;
     margin-right: 50px;
@@ -22,6 +25,7 @@ body{
     margin-top: 500px;
  }*/
 
+ /*footer block*/
  .footer1 {
     display: flex;
     flex-direction: row;
@@ -70,6 +74,8 @@ body{
   
   }
   */
+
+  /*copyright in footer*/
   .copyright1{
     text-align: center;
     padding: 20px 15%;

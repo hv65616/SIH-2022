@@ -2,7 +2,8 @@ body{
     background-color: #f1f1ef;
   }
   
-  input[type=text],input[type=password] {
+  /*position and styling for input boxes*/
+ input[type=text],input[type=password] {
     width: 26vw;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -11,6 +12,7 @@ body{
     background: #ddd;
   }
   
+  /*onclick styling for input boxes*/
   input[type=text]:focus, input[type=password]:focus {
     background-color: rgb(188, 186, 186);
     outline: none;
@@ -30,7 +32,7 @@ body{
     transition: all .4s ease;
   }
   
-  
+  /*login button position and styling*/
   #Loginbutton10 {
     background-color: #34421E;
     color: white;
@@ -43,14 +45,17 @@ body{
     width: 9vw;
   }
   
+  /*admin form complete block*/
   #container10{
     padding: 20px;
   }
   
+/*heading position for admin form*/
   #heading10{
     margin-left: 7.5vw;
   }
   
+/*admin form box position*/
 #contain10{
     position: absolute;
     top: 160px;
@@ -58,6 +63,7 @@ body{
   
   }
 
+  /*logo block position*/
   #container10_1{
     position: absolute;
     height: 25px;
@@ -71,6 +77,7 @@ body{
     align-items: center;
   }
 
+  /*logo styling within block*/
   #logo10{
     margin-top: 17px;
   }

@@ -5,14 +5,24 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
+
 // Official_Signup Schema
 const User = require("./models/college_signup");
+
 // Official_Login Schema
 // const User_Login = require("./models/official_login");
+
 // Authentic_Colleges Schema
 const Authentic_College = require("./models/authentic_colleges");
+<<<<<<< HEAD
 // Fake_University Schema
 const Fake_Univ = require("./models/fake_university");
+=======
+
+// College_Data Schema
+const College_Data = require("./models/college_Data");
+
+>>>>>>> 37376f0565d03e56cf651c3c9a1f51a61ba6d3c7
 const connectToMongo = require("./db");
 connectToMongo();
 
@@ -24,10 +34,12 @@ const staticpath = path.join(__dirname, "../frontend");
 
 app.use(express.static(staticpath));
 
+// Get Request
 app.get("/", (req, res) => {
   res.send("Server is runing on PORT:3000");
 });
 
+// Get Request
 app.get("/authentic_college", (req, res) => {
   Authentic_College.find(
     { universityname: req.query.universityname },
@@ -41,11 +53,21 @@ app.get("/authentic_college", (req, res) => {
   );
 });
 
-console.log(path.join(__dirname,"../frontend/admin.html"));
-app.get("/admin", (req,res) => {
-  res.sendFile(
-    path.join(__dirname, "../frontend/admin.html")
-  );
+// Get Request
+app.get("/admin", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/admin.html"));
+});
+
+//
+app.get("/ugcofficial", (req, res) => {
+  const username = req.query.username;
+  const password = req.query.password;
+  if (password === "admin123" && username === "admin") {
+    res.send("Welcome ADMIN");
+  } else {
+    res.send("Enter correct password");
+    console.log(password);
+  }
 });
 
 // POST reqquest
@@ -93,7 +115,7 @@ app.post("/official_login", async (req, res) => {
     const user = await User.findOne({ username: username });
 
     if (user.password === password) {
-      res.send("User Login Successful");
+      res.sendFile(path.join(__dirname, "../frontend/applyform.html"));
     } else {
       res.send("Please enter your correct password");
     }
@@ -102,6 +124,7 @@ app.post("/official_login", async (req, res) => {
   }
 });
 
+// Post Request
 app.post("/contactus", (req, res) => {
   console.log(req.body);
 
@@ -131,6 +154,7 @@ app.post("/contactus", (req, res) => {
   });
 });
 
+<<<<<<< HEAD
 //fake university
 app.get("/fakeuniv", (req, res) => {
   Fake_Univ.find({}, (err, docs) => {
@@ -145,4 +169,41 @@ app.get("/fakeuniv", (req, res) => {
 
 app.listen(3000, (req, res) => {
   console.log("Server started on port 3000");
+=======
+// Post Request
+app.post("/applyform", async (req, res) => {
+  try {
+    let college_email = await College_Data.findOne({ email: req.body.email });
+    if (college_email) {
+      res.send(
+        "College with this email id is already registered in our system"
+      );
+    } else {
+      const college_data = new College_Data({
+        universityname: req.body.universityname,
+        address: req.body.address,
+        pincode: req.body.pincode,
+        state: req.body.state,
+        geolocation: req.body.geolocation,
+        contact: req.body.contact,
+        faxnumber: req.body.faxnumber,
+        email: req.body.email,
+        website: req.body.website,
+        programmes: req.body.programmes,
+        aicte: req.body.aicte,
+        nba: req.body.nba,
+        naac: req.body.naac,
+      });
+      const data = await college_data.save();
+      res.sendFile(path.join(__dirname, "../frontend/applyformsuccess.html"));
+    }
+  } catch (error) {
+    res.send("Some internal error occured");
+    console.log(error);
+  }
+});
+
+app.listen(process.env.PORT || 3000, (req, res) => {
+  console.log(`Server started on port ${process.env.PORT}`);
+>>>>>>> 37376f0565d03e56cf651c3c9a1f51a61ba6d3c7
 });

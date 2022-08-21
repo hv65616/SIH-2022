@@ -2,6 +2,7 @@ body{
   background-color: #f1f1ef;
 }
 
+/*position and styling of input boxes*/
 input[type=text],
 input[type=email] {
   width: 26vw;
@@ -12,12 +13,14 @@ input[type=email] {
   background: #ddd;
 }
 
+/*onclick input boxes styling*/
 input[type=text]:focus,
 input[type=email]:focus {
   background-color: rgb(188, 186, 186);
   outline: none;
 }
 
+/*onclick send msg button styling*/
 #Sendmsg5:hover {
   opacity: 1;
   -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
@@ -29,7 +32,7 @@ input[type=email]:focus {
   transition: all .4s ease;
 }
 
-
+/*send msg button position and styling*/
 #Sendmsg5 {
   background-color: #34421e;
   color: white;
@@ -42,10 +45,12 @@ input[type=email]:focus {
   width: 10vw;
 }
 
+/*contact us block position*/
 #container5 {
   padding: 16px;
 }
 
+/*contact us heading position*/
 #heading5 {
   margin-left: 10vw;
 }
@@ -57,6 +62,7 @@ input[type=email]:focus {
 
 }
 
+/*contact us image position*/
 #image5 {
   position: absolute;
   top: 17px;

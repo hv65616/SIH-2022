@@ -14,15 +14,13 @@ const User = require("./models/college_signup");
 
 // Authentic_Colleges Schema
 const Authentic_College = require("./models/authentic_colleges");
-<<<<<<< HEAD
+
 // Fake_University Schema
 const Fake_Univ = require("./models/fake_university");
-=======
 
 // College_Data Schema
 const College_Data = require("./models/college_Data");
 
->>>>>>> 37376f0565d03e56cf651c3c9a1f51a61ba6d3c7
 const connectToMongo = require("./db");
 connectToMongo();
 
@@ -58,7 +56,7 @@ app.get("/admin", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/admin.html"));
 });
 
-//
+//Get Request
 app.get("/ugcofficial", (req, res) => {
   const username = req.query.username;
   const password = req.query.password;
@@ -69,6 +67,18 @@ app.get("/ugcofficial", (req, res) => {
     console.log(password);
   }
 });
+
+//fake university
+app.get("/fakeuniv", (req, res) => {
+  Fake_Univ.find({}, (err, docs) => {
+    if(err) {
+      console.log(err);
+    }else{
+      res.render("fakeuniv", {details: docs});
+      // console.log("working fake univ");
+    }
+  })
+})
 
 // POST reqquest
 app.post(
@@ -154,22 +164,6 @@ app.post("/contactus", (req, res) => {
   });
 });
 
-<<<<<<< HEAD
-//fake university
-app.get("/fakeuniv", (req, res) => {
-  Fake_Univ.find({}, (err, docs) => {
-    if(err) {
-      console.log(err);
-    }else{
-      res.render("fakeuniv", {details: docs});
-      // console.log("working fake univ");
-    }
-  })
-})
-
-app.listen(3000, (req, res) => {
-  console.log("Server started on port 3000");
-=======
 // Post Request
 app.post("/applyform", async (req, res) => {
   try {
@@ -205,5 +199,4 @@ app.post("/applyform", async (req, res) => {
 
 app.listen(process.env.PORT || 3000, (req, res) => {
   console.log(`Server started on port ${process.env.PORT}`);
->>>>>>> 37376f0565d03e56cf651c3c9a1f51a61ba6d3c7
 });

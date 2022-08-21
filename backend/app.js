@@ -5,12 +5,19 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
+
 // Official_Signup Schema
 const User = require("./models/college_signup");
+
 // Official_Login Schema
 // const User_Login = require("./models/official_login");
+
 // Authentic_Colleges Schema
 const Authentic_College = require("./models/authentic_colleges");
+
+// College_Data Schema
+const College_Data = require("./models/college_Data");
+
 const connectToMongo = require("./db");
 connectToMongo();
 
@@ -22,10 +29,12 @@ const staticpath = path.join(__dirname, "../frontend");
 
 app.use(express.static(staticpath));
 
+// Get Request
 app.get("/", (req, res) => {
   res.send("Server is runing on PORT:3000");
 });
 
+// Get Request
 app.get("/authentic_college", (req, res) => {
   Authentic_College.find(
     { universityname: req.query.universityname },
@@ -36,13 +45,6 @@ app.get("/authentic_college", (req, res) => {
         res.render("search", { details: docs });
       }
     }
-  );
-});
-
-console.log(path.join(__dirname,"../frontend/admin.html"));
-app.get("/admin", (req,res) => {
-  res.sendFile(
-    path.join(__dirname, "../frontend/admin.html")
   );
 });
 
@@ -91,7 +93,7 @@ app.post("/official_login", async (req, res) => {
     const user = await User.findOne({ username: username });
 
     if (user.password === password) {
-      res.send("User Login Successful");
+      res.sendFile(path.join(__dirname, "../frontend/applyform.html"));
     } else {
       res.send("Please enter your correct password");
     }
@@ -100,6 +102,7 @@ app.post("/official_login", async (req, res) => {
   }
 });
 
+// Post Request
 app.post("/contactus", (req, res) => {
   console.log(req.body);
 
@@ -127,6 +130,39 @@ app.post("/contactus", (req, res) => {
       res.send("success");
     }
   });
+});
+
+// Post Request
+app.post("/applyform", async (req, res) => {
+  try {
+    let college_email = await College_Data.findOne({ email: req.body.email });
+    if (college_email) {
+      res.send(
+        "College with this email id is already registered in our system"
+      );
+    } else {
+      const college_data = new College_Data({
+        universityname: req.body.universityname,
+        address: req.body.address,
+        pincode: req.body.pincode,
+        state: req.body.state,
+        geolocation: req.body.geolocation,
+        contact: req.body.contact,
+        faxnumber: req.body.faxnumber,
+        email: req.body.email,
+        website: req.body.website,
+        programmes: req.body.programmes,
+        aicte: req.body.aicte,
+        nba: req.body.nba,
+        naac: req.body.naac,
+      });
+      const data = await college_data.save();
+      res.send("Thanks for providing us the information");
+    }
+  } catch (error) {
+    res.send("Some internal error occured");
+    console.log(error);
+  }
 });
 
 app.listen(3000, (req, res) => {

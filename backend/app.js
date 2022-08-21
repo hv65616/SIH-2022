@@ -157,7 +157,9 @@ app.post("/applyform", async (req, res) => {
         naac: req.body.naac,
       });
       const data = await college_data.save();
-      res.send("Thanks for providing us the information");
+      res.sendFile(
+        path.join(__dirname, "../frontend/applyformsuccess.html")
+      );
     }
   } catch (error) {
     res.send("Some internal error occured");

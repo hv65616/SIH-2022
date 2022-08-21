@@ -2,6 +2,7 @@ body{
   background-color: #f1f1ef;
 }
 
+/*input boxes postion and styling*/
 input[type=text],
 input[type=email],
 input[type=password] {
@@ -13,6 +14,7 @@ input[type=password] {
   background: #ddd;
 }
 
+/*onclick input box*/
 input[type=text]:focus,
 input[type=email]:focus,
 input[type=password]:focus {
@@ -20,8 +22,7 @@ input[type=password]:focus {
   outline: none;
 }
 
-
-
+/*onclick sign up button shadow*/
 #Sign-up-button2:hover {
   opacity: 1;
   -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
@@ -33,7 +34,7 @@ input[type=password]:focus {
   transition: all .4s ease;
 }
 
-
+/*sign up button*/
 #Sign-up-button2 {
   background-color: #34421e;
   color: white;
@@ -46,23 +47,28 @@ input[type=password]:focus {
   width: 10vw;
 }
 
+/*sign up form container*/
 #container2 {
   padding: 16px;
 }
 
+/*Sign up text*/
 #heading2 {
   margin-left: 10vw;
 }
 
+/*text under sign up button*/
 #text2 {
   margin-left: 3vw;
 }
 
+/*signup page image*/
 #image2 {
   position: absolute;
   right: 120px;
 }
 
+/*complete sign up container*/
 #contain2 {
   position: absolute;
   left: 150px;

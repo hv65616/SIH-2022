@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
+const popup = require("popup")
 
 // Official_Signup Schema
 const User = require("./models/college_signup");
@@ -79,14 +80,14 @@ app.get("/ugcofficial", (req, res) => {
 //fake university
 app.get("/fakeuniv", (req, res) => {
   Fake_Univ.find({}, (err, docs) => {
-    if(err) {
+    if (err) {
       console.log(err);
-    }else{
-      res.render("fakeuniv", {details: docs});
+    } else {
+      res.render("fakeuniv", { details: docs });
       // console.log("working fake univ");
     }
-  })
-})
+  });
+});
 
 // POST reqquest
 app.post(
@@ -176,9 +177,15 @@ app.post("/contactus", (req, res) => {
 app.post("/applyform", async (req, res) => {
   try {
     let college_email = await College_Data.findOne({ email: req.body.email });
+    let geolocation = await College_Data.findOne({
+      geolocation: req.body.geolocation,
+    });
     if (college_email) {
       res.send(
         "College with this email id is already registered in our system"
+      );
+    } else if (geolocation) {
+      res.send("You have alredy registed. Kindly wait"
       );
     } else {
       const college_data = new College_Data({
@@ -205,9 +212,7 @@ app.post("/applyform", async (req, res) => {
   }
 });
 
-app.post("/accepted",(req,res)=>{
-  
-})
+app.post("/accepted", (req, res) => {});
 
 app.listen(process.env.PORT || 3000, (req, res) => {
   console.log(`Server started on port ${process.env.PORT}`);

@@ -10,23 +10,28 @@
 </head>
 
 <body>
-    <form action="/official_login" method="POST">
-        <div id="contain3">
-            <div id="container3">
-                <h1 id="heading3">Log In</h1>
-                <label for="username3"><b>Username</b></label>
-                <input name="username" type="text" placeholder="Enter your Username" id="username3" required>
-                <label for="password3"><b>Password</b></label>
-                <input name="password" type="password" placeholder="Enter Password" id="password3" required>
-                <div id="forgotpass"><a href="#">Forgot Password?</a></div>
-                <button type="submit" id="Loginbutton3">LOG IN</button>
+    <center>
+        <div id="container">
+            <div id="image3">
+                <img src="images/login_img2.svg" alt="log in form image">
             </div>
+            <form action="/official_login" method="POST">
+                <div id="contain3" class="center">
+                    <div id="container3" class="center">
+                        <h1 id="heading3" class="center">Log In</h1>
+                        <label for="username3" class="center"><b>Username</b></label>
+                        <input name="username" class="center" type="text" placeholder="Enter your Username"
+                            id="username3" required>
+                        <label for="password3" class="center"><b>Password</b></label>
+                        <input name="password" class="center" type="password" placeholder="Enter Password"
+                            id="password3" required>
+                        <div id="forgotpass" class="center"><a href="#">Forgot Password?</a></div>
+                        <button type="submit" class="center" id="Loginbutton3">LOG IN</button>
+                    </div>
+                </div>
+            </form>
         </div>
-    </form>
-
-    <div id="image3">
-        <img src="images/login_img2.svg" alt="log in form image" width="600" height="700">
-    </div>
+    </center>
 </body>
 
 </html>

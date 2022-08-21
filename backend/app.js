@@ -11,6 +11,8 @@ const User = require("./models/college_signup");
 // const User_Login = require("./models/official_login");
 // Authentic_Colleges Schema
 const Authentic_College = require("./models/authentic_colleges");
+// Fake_University Schema
+const Fake_Univ = require("./models/fake_university");
 const connectToMongo = require("./db");
 connectToMongo();
 
@@ -128,6 +130,18 @@ app.post("/contactus", (req, res) => {
     }
   });
 });
+
+//fake university
+app.get("/fakeuniv", (req, res) => {
+  Fake_Univ.find({}, (err, docs) => {
+    if(err) {
+      console.log(err);
+    }else{
+      res.render("fakeuniv", {details: docs});
+      // console.log("working fake univ");
+    }
+  })
+})
 
 app.listen(3000, (req, res) => {
   console.log("Server started on port 3000");

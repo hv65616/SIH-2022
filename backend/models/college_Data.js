@@ -12,7 +12,6 @@ const College_Data_Schema = new Schema({
   pincode: {
     type: Number,
     required: true,
-    unique: true,
   },
   state: {
     type: String,
@@ -22,6 +21,7 @@ const College_Data_Schema = new Schema({
     {
       type: String,
       required: true,
+      unique: true,
     },
   ],
   contact: {

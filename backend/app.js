@@ -48,6 +48,23 @@ app.get("/authentic_college", (req, res) => {
   );
 });
 
+// Get Request
+app.get("/admin", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/admin.html"));
+});
+
+//
+app.get("/ugcofficial", (req, res) => {
+  const username = req.query.username;
+  const password = req.query.password;
+  if (password === "admin123" && username === "admin") {
+    res.send("Welcome ADMIN");
+  } else {
+    res.send("Enter correct password");
+    console.log(password);
+  }
+});
+
 // POST reqquest
 app.post(
   "/official_signup",
@@ -157,9 +174,7 @@ app.post("/applyform", async (req, res) => {
         naac: req.body.naac,
       });
       const data = await college_data.save();
-      res.sendFile(
-        path.join(__dirname, "../frontend/applyformsuccess.html")
-      );
+      res.sendFile(path.join(__dirname, "../frontend/applyformsuccess.html"));
     }
   } catch (error) {
     res.send("Some internal error occured");

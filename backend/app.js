@@ -58,7 +58,15 @@ app.get("/ugcofficial", (req, res) => {
   const username = req.query.username;
   const password = req.query.password;
   if (password === "admin123" && username === "admin") {
-    res.send("Welcome ADMIN");
+    // res.send("Welcome ADMIN");
+    College_Data.find({}, (err, docs) => {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("colleges", { details: docs });
+        // console.log(docs);
+      }
+    });
   } else {
     res.send("Enter correct password");
     console.log(password);
@@ -181,6 +189,10 @@ app.post("/applyform", async (req, res) => {
     console.log(error);
   }
 });
+
+app.post("/accepted",(req,res)=>{
+  
+})
 
 app.listen(3000, (req, res) => {
   console.log("Server started on port 3000");

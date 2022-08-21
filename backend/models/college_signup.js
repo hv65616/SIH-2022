@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
-const Official_Signup_Schema = new Schema({
+const College_Signup_Schema = new Schema({
   universityname: {
     type: String,
     required: true,
@@ -24,8 +24,8 @@ const Official_Signup_Schema = new Schema({
   },
 });
 
-const Official_Signup = mongoose.model(
-  "Official-Signups",
-  Official_Signup_Schema
+const College_Signup = mongoose.model(
+  "Colleges-Signups",
+  College_Signup_Schema
 );
-module.exports = Official_Signup;
+module.exports = College_Signup;

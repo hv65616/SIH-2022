@@ -6,9 +6,9 @@ const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
 // Official_Signup Schema
-const User = require("./models/official_signup");
+const User = require("./models/college_signup");
 // Official_Login Schema
-const User_Login = require("./models/official_login");
+// const User_Login = require("./models/official_login");
 // Authentic_Colleges Schema
 const Authentic_College = require("./models/authentic_colleges");
 const connectToMongo = require("./db");
@@ -33,9 +33,16 @@ app.get("/authentic_college", (req, res) => {
       if (err) {
         console.log(err);
       } else {
-        res.render("search2", { details: docs });
+        res.render("search", { details: docs });
       }
     }
+  );
+});
+
+console.log(path.join(__dirname,"../frontend/admin.html"));
+app.get("/admin", (req,res) => {
+  res.sendFile(
+    path.join(__dirname, "../frontend/admin.html")
   );
 });
 
@@ -80,7 +87,9 @@ app.post("/official_login", async (req, res) => {
   try {
     const username = req.body.username;
     const password = req.body.password;
-    const user = await User_Login.findOne({ username: username });
+    // const user = await User_Login.findOne({ username: username });
+    const user = await User.findOne({ username: username });
+
     if (user.password === password) {
       res.send("User Login Successful");
     } else {

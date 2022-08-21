@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wizard-at your service</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <div id="container11">
+      <!--This is for the big navigation bar-->
+      <a href="./index.html">
+        <img
+          src="./images/wizardlogo.png"
+          alt="logo1"
+          id="logo1"
+          width="175"
+          height="185"
+        />
+      </a>
+      <!--it is for website logo png-->
+      <div id="navigation1">
+        <!--links to concerned pages-->
+        <div id="navigation1-2">
+          <a href="./aboutus.html">About us</a>
+          <a href="./contactus.html">Contact us</a>
+        </div>
+
+        <!--at the top for navigating among pages-->
+        <input
+          type="button"
+          value="Log In"
+          id="Login-button1"
+          onclick="window.location.href = './official_login.html'"
+        />
+        <input
+          type="button"
+          value="Sign Up"
+          id="Sign-up-button1"
+          onclick="window.location.href='./official_signup.html'"
+        />
+      </div>
+    </div>
+    <div style="padding-top: 120px; text-align: left" id="table-box">
+        <% for(var i = 0;i<details.length;i++){%>
+      <table style="border: 2px solid" class="table">
+        <thead>
+          <% if(details.length){%>
+          <tr>
+            <th scope="col">Name:-</th>
+            <% if(details.length){ %>
+            <td>
+              <b><i> <%=details[i].name %> </i> </b>
+            </td>
+            <% } %>
+          </tr>
+
+          <%} else{%>
+          <h1>No College With This Name Is Found In Our Database</h1>
+          <%}%>
+        </thead>
+      </table>
+      <%} %>
+    </div>
+  </body>
+</html>

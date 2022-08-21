@@ -15,6 +15,9 @@ const User = require("./models/college_signup");
 // Authentic_Colleges Schema
 const Authentic_College = require("./models/authentic_colleges");
 
+// Fake_University Schema
+const Fake_Univ = require("./models/fake_university");
+
 // College_Data Schema
 const College_Data = require("./models/college_Data");
 
@@ -53,7 +56,7 @@ app.get("/admin", (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/admin.html"));
 });
 
-//
+//Get Request
 app.get("/ugcofficial", (req, res) => {
   const username = req.query.username;
   const password = req.query.password;
@@ -64,6 +67,18 @@ app.get("/ugcofficial", (req, res) => {
     console.log(password);
   }
 });
+
+//fake university
+app.get("/fakeuniv", (req, res) => {
+  Fake_Univ.find({}, (err, docs) => {
+    if(err) {
+      console.log(err);
+    }else{
+      res.render("fakeuniv", {details: docs});
+      // console.log("working fake univ");
+    }
+  })
+})
 
 // POST reqquest
 app.post(

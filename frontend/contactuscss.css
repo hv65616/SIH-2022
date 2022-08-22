@@ -8,6 +8,9 @@ body {
 #container {
   display: flex;
 }
+
+/* Look for pc's and large screens */
+
 @media (min-width: 780px) {
 
   /*position and styling of input boxes*/
@@ -76,16 +79,22 @@ body {
     top: 17px;
     right: 170px;
   }
+
+  /*contact us message box size position*/
   #message {
     width: 377px;
     height: 145px;
     margin-top: 5px;
   }
+
+  /*contact us image size*/
   img {
     width: 530px;
     height: 630px;
+  }
 }
-}
+
+/* Look for mobile phone screens */
 
 @media (max-width: 780px) {
 

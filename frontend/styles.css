@@ -116,13 +116,30 @@ body {
   color: #34421E;
 }
 
-/*fake university link*/
+#Fake1 {
+ background-color: rgb(246, 4, 4);
+ color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  font-weight: bold;
+  width: 50px;
+  margin-left: 15px;
+}
+
+#Fake1:hover {
+  background-color:rgb(219, 9, 9);
+  cursor: pointer;
+}
+
+/*fake university link
 #navigation1-1>a {
   margin-left: 10px;
   text-decoration: none;
   font-size: 15px;
   color:red;
-}
+}*/
 
 /*welcome heading position and styling*/
 #homepageheading1 {

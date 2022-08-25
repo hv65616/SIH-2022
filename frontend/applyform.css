@@ -21,7 +21,8 @@ input[type=text]:focus, input[type=email]:focus, input[type=url]:focus {
 } 
 
 body{
-    background-color: #f1f1ef;  
+    background-color: #ffffff
+    ;  
 }
 
 /*onclick apply button styling*/
@@ -38,7 +39,7 @@ body{
   
 /*styling and position for apply button*/ 
 #Apply-now9 {
-    background-color: #34421e;
+    background-color: #EE6644;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

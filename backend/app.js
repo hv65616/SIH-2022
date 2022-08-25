@@ -96,7 +96,9 @@ app.post(
   body("email").isEmail().normalizeEmail(),
   async (req, res) => {
     try {
+      const usernameExists = await User.findOne({username: req.body.username});
       const error = validationResult(req);
+      if (usernameExists) return res.status(400).send("Username already taken");
       if (error.isEmpty() != true) {
         res.send("Email is not valid");
       } else {

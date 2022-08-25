@@ -2,7 +2,7 @@ body {
   /*background-image: url("images/homepage_img0.jpg");
   background-size: cover;
   background-repeat: no-repeat;*/
-  background-color: #f1f1ef;
+  background-color: #ffffff;
   position: relative;
   height: 96vh;
   overflow-x: hidden;
@@ -16,7 +16,6 @@ body {
 
 /*logo bar styling*/
 #container1_1 {
-  background-color: #f1f1ef;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -94,11 +93,9 @@ body {
   background-color: #EE6644;
   cursor: pointer;
 }
-
 /*navigation bar at the top right*/
 #navigation1 {
   position: absolute;
-  background-color: #f1f1ef;
   height: 25px;
   width: 415px;
   border-radius: 10px;
@@ -167,7 +164,6 @@ body {
 /*container for logo...big one*/
 #container11 {
   position: absolute;
-  background-color: #f1f1ef;
   height: 25px;
   width: 200px;
   border-radius: 10px;
@@ -328,7 +324,7 @@ body {
 /*copyright block in footer*/
 .copyright1{
   padding: 0.7vw 35%;
-  color: #f1f1ef;
+  color: #ffffff;
   background:#293241;
   width:100%;
 }

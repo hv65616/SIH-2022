@@ -1,7 +1,7 @@
 /* github@AyushAgnihotri2025 */
 
 body {
-  background-color: #f1f1ef;
+  background-color: #ffffff;
 }
 
 #container {
@@ -46,7 +46,7 @@ body {
 
   /*sign up button*/
   #Sign-up-button2 {
-    background-color: #34421e;
+    background-color: #EE6644;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;

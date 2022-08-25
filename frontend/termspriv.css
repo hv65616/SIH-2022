@@ -1,5 +1,5 @@
 body{
-    background-color: #f1f1ef;
+    background-color: #ffffff;
 }
 
 /*terms and conditions heading*/
@@ -29,11 +29,10 @@ body{
  .footer1 {
     display: flex;
     flex-direction: row;
-    margin-top: 500px;
     width: 1059px;
-    padding: 10px 15%;
-    background:#6e7e54;
-    color: #f1f1ef;
+    padding: 0 15%;
+    background:#f8dad3;
+    color: black;
   }
   
   .footer1 div{
@@ -47,11 +46,12 @@ body{
     margin-bottom: 30px;
   }
   
-  .col_1 a{
+  .col_1 a, .col_2 p, .col_3 p {
     text-decoration: none;
-    color: #f1f1ef;
     display:block;
     margin-bottom: 10px;
+    color: black;
+    font-size: small;
   }
   /*
   .social{
@@ -78,9 +78,9 @@ body{
   /*copyright in footer*/
   .copyright1{
     text-align: center;
-    padding: 20px 15%;
-    color: #f1f1ef;
-    background:#e5c070;
+    padding: 0.7vw 15%;
+    color: #ffffff;
+    background:#293241;
     width:1059px;
 
   }

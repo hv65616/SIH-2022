@@ -1,5 +1,5 @@
 body{
-  background-color: #f1f1ef;
+  background-color: #ffffff;
 }
 
 /*position and styling of input boxes*/
@@ -34,7 +34,7 @@ input[type=email]:focus {
 
 /*send msg button position and styling*/
 #Sendmsg5 {
-  background-color: #34421e;
+  background-color: #EE6644;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;

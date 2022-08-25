@@ -64,10 +64,12 @@ function sleep(ms) {
     setTimeout(resolve, ms);
   });
 }
-(async () => {
+
+
+async  function scrape_university (university_type)  {
   //to call single_page_extraction for each url
 
-  let state = data.types.state.slice(0,2);
+  let state = data.types.state;
   let final_data = [];
 
   for (let i = 0; i < state.length; i++) {
@@ -79,10 +81,15 @@ function sleep(ms) {
       console.log(err);
     }
   }
-  fs.writeFile("state.json",JSON.stringify({state:final_data}),'utf8',()=>{
+  fs.writeFile(`${university_type}.json`,JSON.stringify({state:final_data}),'utf8',()=>{
     logger("SUCCESSFULLY UPDATED THE FILES")
   })
-})();
-//IIFE EXECUTIONS
+};
+
+//run these functions one at a time and then comment the other three
+scrape_university('state');
+// scrape_university('central')
+// scrape_university('deemed')
+// scrape_university('private')
 
 

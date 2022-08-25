@@ -21,7 +21,7 @@
             <!--container for complete signup block-->
             <div id="container2">
                 <form action="/official_signup" method="POST">
-                    <h1 id="heading2">Sign Up</h1>
+                    <h1 id="heading2">HEI/University Sign Up</h1>
                     <label for="university2"><b>HEI/University Name</b></label>
                     <!--university area-->
                     <input name="universityname" type="text" placeholder="Enter your University" id="university2"
@@ -34,7 +34,7 @@
                     <input name="email" type="email" placeholder="Enter your Email" id="email2" required>
                     <label for="password2"><b>Password</b></label>
                     <!--password area-->
-                    <input name="password" type="password" placeholder="Enter Password" id="password2" required>
+                    <input type="password" id="password2" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your Password" required>
                     <label for="passwordrep2"><b>Confirm Password</b></label>
                     <!--confirm password area-->
                     <input name="confirmpassword" type="password" placeholder="Confirm Password" id="passwordrep2"

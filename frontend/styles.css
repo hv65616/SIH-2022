@@ -60,18 +60,18 @@ body {
 
   background-color: #EE6644;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 5px;
   border: none;
   height: 30px;
   font-weight: bold;
-  width: 60px;
+  width: 72px;
   margin-left: 15px;
 }
 
 /*onclick login button shadow*/
 #Login-button1:hover {
-  background-color: #EE6644;
+  background-color: #f65b35;
   cursor: pointer;
 }
 
@@ -79,32 +79,33 @@ body {
 #Sign-up-button1 {
   background-color: #EE6644;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 5px;
   border: none;
   height: 30px;
   font-weight: bold;
-  width: 60px;
+  width: 73px;
   margin-left: 15px;
 }
 
 /*onclick signup button shadow*/
 #Sign-up-button1:hover {
-  background-color: #EE6644;
+  background-color: #f65b35;
   cursor: pointer;
 }
 /*navigation bar at the top right*/
 #navigation1 {
   position: absolute;
   height: 25px;
-  width: 415px;
-  border-radius: 10px;
+  width: 510px;
+  border-radius: 50px;
   display: flex;
   flex-direction: row;
   margin-top: 10px;
   margin-left: 65vw;
-  padding: 10px 10px 20px 10px;
+  padding: 15px 10px 20px 10px;
   align-items: center;
+  background-color: #293241;
 }
 
 
@@ -165,19 +166,17 @@ body {
 #container11 {
   position: absolute;
   height: 25px;
-  width: 200px;
   border-radius: 10px;
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
-  margin-left: 5px;
-  padding: 10px 10px 20px 10px;
+  padding: 31px 10px 31px 10px;
   align-items: center;
+  width:99vw;
 }
 
 /*logo position within block*/
 #logo1, #logo2{
-  margin-top: 2vw;
+  margin-top: 0vw;
 }
 
 #bg1{
@@ -329,4 +328,20 @@ body {
   width:100%;
 }
 
+#homebutton1 {
 
+  background-color: #EE6644;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  width: 72px;
+  margin-left: 15px;
+}
+
+#homebutton1:hover {
+  background-color: #f65b35;
+  cursor: pointer;
+}

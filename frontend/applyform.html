@@ -29,7 +29,7 @@
 
 <body onload="setappno()">
   <center>
-    <h1 id="application9">ENTRY FORM</h1>
+    <h1 id="application9">Registration Form</h1>
   </center>
   <hr style="width: 100%;height: 4px;background-color: black; opacity: 100; " />
   <form action="/applyform" method="post">
@@ -39,12 +39,14 @@
       <!-- application number generation -->
       <input name="applicationnumber" type="text" placeholder="Your Application Number" id="applicationnumber" required
         disabled>
-      <label for="university9"><b>Name of the Institution</b></label>
+      <label for="university9"><b>Name of the HEI/University</b></label>
       <!--mandatory username area-->
-      <input name="universityname" type="text" placeholder="Enter your Institute name" id="university9" required>
-      <label for="address9"><b>Address of the Institution</b></label>
+      <input name="universityname" type="text" placeholder="Enter the name" id="university9" required>
+      <label for="address9"><b>Address of the HEI/University</b></label>
+      <input name="address" type="text" placeholder="Enter the address" id="address9" required>
       <!--mandatory address area-->
-      <input name="address" type="text" placeholder="Enter the address of Institute" id="address9" required>
+      <label for="city9"><b>City</b></label>
+      <input name="city" type="text" placeholder="Enter the city" id="city9" required>
       <label for="pincode9"><b>Pincode</b></label>
       <!--mandatory location area-->
       <input name="pincode" type="text" placeholder="Enter the pincode" id="pincode9" required>
@@ -88,8 +90,6 @@
         <option value="Uttarakhand">Uttarakhand</option>
         <option value="West Bengal">West Bengal</option>
         </select>
-      <label for="longlat9"><b>Longitude and Latitude</b></label>
-      <input name="geolocation" type="text" placeholder="Enter the latitude and longitude" id="longlat9" required>
       <label for="phone9"><b>Contact Number</b></label>
       <!--mandatory contact details area-->
       <input name="contact" type="text" placeholder="Enter the phone number with STD code" id="phone9" required>
@@ -116,7 +116,7 @@
         </select>
       <label for="other9"><b>Other*(if any)</b></label>
       <input name="other9" type="text" placeholder="Enter the Programmes offered" id="other9">
-      <label for="upload9"><b>Upload Gazette Information/EoA/Approval letter</b></label>
+      <label for="upload9"><b>Upload 2(F)&12(B) documentation/Gazette Information/EoA/Approval letter</b></label>
       <input name="upload9" type="url" placeholder="Enter the Google drive link to the documents" id="upload9">
       <!--optional nba data-->
       <b>NBA Accreditation status:-</b>

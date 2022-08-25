@@ -21,6 +21,8 @@ body {
   background-repeat: no-repeat;
 }
 
+
+
 /*complete serach box position and styling*/
 #searchbox1 {
   position: relative;
@@ -32,12 +34,12 @@ body {
 /*search bar*/
 #search1 {
   position: relative;
-  background-color: #34421E;
+  background-color: #293241;
   height: 50px;
   width: 60vw;
   border-radius: 10px;
   display: flex;
-  top: 10vh;
+  top: 5vh;
   padding: 10px 10px 20px 10px;
   align-items: center;
   box-shadow: 0 5px 5px 3px gainsboro;
@@ -57,7 +59,7 @@ body {
 /*login button at the top right*/
 #Login-button1 {
 
-  background-color: #34421E;
+  background-color: #EE6644;
   color: #ffffff;
   font-size: 13px;
   border-radius: 5px;
@@ -70,13 +72,13 @@ body {
 
 /*onclick login button shadow*/
 #Login-button1:hover {
-  background-color: #34421E;
+  background-color: #EE6644;
   cursor: pointer;
 }
 
 /*signup button at the top right*/
 #Sign-up-button1 {
-  background-color: #C19434;
+  background-color: #EE6644;
   color: #ffffff;
   font-size: 13px;
   border-radius: 5px;
@@ -89,7 +91,7 @@ body {
 
 /*onclick signup button shadow*/
 #Sign-up-button1:hover {
-  background-color: #C19434;
+  background-color: #EE6644;
   cursor: pointer;
 }
 
@@ -113,7 +115,7 @@ body {
   margin-left: 10px;
   text-decoration: none;
   font-size: 15px;
-  color: #34421E;
+  color: #EE6644;
 }
 
 #Fake1 {
@@ -143,15 +145,15 @@ body {
 
 /*welcome heading position and styling*/
 #homepageheading1 {
-  margin-top: 150px;
-  font-size: 50px;
+  margin-top: 3vw;
+  font-size: 35px;
 }
 
 /*search button in the search bar position and styling*/
 #searchbutton1 {
   position: relative;
   margin-left: 2px;
-  background-color: #C19434;
+  background-color: #EE6644;
   color: #ffffff;
   font-size: 13px;
   border-radius: 5px;
@@ -178,8 +180,12 @@ body {
 }
 
 /*logo position within block*/
-#logo1{
-  margin-top: 17px;
+#logo1, #logo2{
+  margin-top: 2vw;
+}
+
+#bg1{
+  margin-top: 6vw;
 }
 /*for positioning of squares*/
 #statistics1{
@@ -215,12 +221,12 @@ body {
 #heading1{
   font-size:50px;
   margin-left: 400px;
-  margin-top: 400px;
+  margin-top: 150px;
 }
 
 #heading2{
   font-size:45px;
-  margin-left: 440px;
+  text-align: center;
 }
 /*for image1_2 in homepgae*/
 #image1_2 {
@@ -236,7 +242,7 @@ body {
   padding: 50px;
   margin: 50px;
   margin-top: 500px;
-  margin-left: 150px;
+  margin-left: 7vw;
   height: 250px; ;
  
 }
@@ -261,7 +267,7 @@ body {
 #image1_3{
   position: absolute;
   top: 1700px;
-  left: 170px;
+  left: 160px;
 }
 
 #image1_4{
@@ -274,30 +280,29 @@ body {
 .footer1 {
   display: flex;
   flex-direction: row;
-  margin-top: 150px;
   width: 100%;
-  padding: 10px 15%;
-  background:#6e7e54;
-  color: #f1f1ef;
+  padding: 0 15%;
+  background:#f8dad3;
+  color: black;
 }
 
 .footer1 div{
   text-align: center;
   flex-grow: 0.2;
-  right:100px;
+  right:100vw;
+  font-weight: 300vw;
+  margin-bottom: 0vw;
 }
 
-.footer1 div h3{
-  font-weight: 300px;
-  margin-bottom: 30px;
-}
 
-.col_1 a{
+.col_1 a, .col_2 p, .col_3 p {
   text-decoration: none;
-  color: #f1f1ef;
   display:block;
   margin-bottom: 10px;
+  color: black;
+  font-size: small;
 }
+
 /*
 .social{
   padding: 30px 15%;
@@ -322,9 +327,9 @@ body {
 
 /*copyright block in footer*/
 .copyright1{
-  padding: 20px 35%;
+  padding: 0.7vw 35%;
   color: #f1f1ef;
-  background:#e5c070;
+  background:#293241;
   width:100%;
 }
 

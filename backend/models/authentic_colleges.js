@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const Authentic_College_Schema = new Schema({
+  applicationnumber: {
+    type: String,
+    required: true,
+  },
   universityname: {
     type: String,
     required: true,

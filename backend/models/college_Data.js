@@ -1,6 +1,10 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 const College_Data_Schema = new Schema({
+  applicationnumber: {
+    type: String,
+    required: true,
+  },
   universityname: {
     type: String,
     required: true,
@@ -64,8 +68,5 @@ const College_Data_Schema = new Schema({
     default: Date.now,
   },
 });
-const College_Data = mongoose.model(
-  "Colleges-Data",
-  College_Data_Schema
-);
+const College_Data = mongoose.model("Colleges-Data", College_Data_Schema);
 module.exports = College_Data;

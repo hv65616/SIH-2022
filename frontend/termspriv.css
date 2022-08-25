@@ -9,6 +9,8 @@ body{
 
 /*container for complete terms and condition block*/
 #container7{
+    text-align: justify;
+    text-justify: inter-word;
     height: 300px;
     width: 700px;
     padding: 16px;
@@ -20,11 +22,6 @@ body{
     padding: 20px;
     margin-right: 50px;
 }
-
- /*#image7 {
-    margin-top: 500px;
- }*/
-
  /*footer block*/
  .footer1 {
     display: flex;
@@ -53,27 +50,6 @@ body{
     color: black;
     font-size: small;
   }
-  /*
-  .social{
-    padding: 30px 15%;
-    
-    
-  }
-  
-  #icons{
-    margin-left: 350px;
-  }
-  
-  .social a{
-    cursor: pointer;
-    color: #f1f1ef;
-    text-decoration: none;
-    margin-left: 50px;
-    font-size: 30px;
-    
-  
-  }
-  */
 
   /*copyright in footer*/
   .copyright1{

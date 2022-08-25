@@ -52,3 +52,32 @@ body{
   #application9{
     font-size: 60px;
   }
+
+  #stateut9{
+    width: 830px;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: block;  
+    border: none;  
+    background: #ddd; 
+
+  }
+
+  #stateut9:focus {  
+    background-color:#ddd;
+    outline: none;
+  } 
+
+  #programmes9{
+    width: 830px;  
+    padding: 15px;  
+    margin: 5px 0 22px 0;  
+    display: block;  
+    border: none;  
+    background: #ddd;
+  }
+
+  #programmes9:focus {  
+    background-color:#ddd;
+    outline: none;
+  } 

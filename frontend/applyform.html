@@ -1,3 +1,5 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,15 +9,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="applyform.css">
   <title>Wizard-Application form</title>
+  <script>
+    function setappno() {
+      var num = [];
+      while (num.length < 10) {
+        var ran = Math.floor(Math.random() * 10000);
+        if (num.indexOf(ran) === -1) {
+          var date = new Date().toLocaleDateString().replaceAll("/", "")
+          num.push("UGC" + date + ran)
+        }
+      }
+      $("#applicationnumber").val(num[0])
+      console.log(num[0]);
+      return num[0];
+
+    }
+  </script>
 </head>
 
-<body>
+<body onload="setappno()">
   <center>
     <h1 id="application9">Application Form</h1>
   </center>
   <hr style="width: 100%;height: 4px;background-color: black; opacity: 100; " />
   <form action="/applyform" method="post">
-    <div id="container9"><!--box for application form-->
+    <!--box for application form-->
+    <div id="container9">
+      <label for="university9"><b>Application Number</b></label>
+      <!-- application number generation -->
+      <input name="applicationnumber" type="text" placeholder="Your Application Number" id="applicationnumber" required
+        disabled>
       <label for="university9"><b>Name of the Institution</b></label>
       <!--mandatory username area-->
       <input name="universityname" type="text" placeholder="Enter your Institute name" id="university9" required>
@@ -58,7 +81,8 @@
       <textarea name="other" id="other9" placeholder="Enter the Accreditation status" cols="55" rows="10"></textarea>
       <!--link of documents to be uploaded-->
       <label for="upload9"><b>Upload Link</b></label>
-      <input name="upload9" type="url" placeholder="Enter the Google drive link to the Accreditation documents" id="upload9">
+      <input name="upload9" type="url" placeholder="Enter the Google drive link to the Accreditation documents"
+        id="upload9">
       <label for="username9"><b>Your name</b></label>
       <input name="username" type="text" placeholder="Enter your name" id="username9" required>
       <label for="email9"><b>Your Email</b></label>

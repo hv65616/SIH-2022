@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
-const popup = require("popup")
 
 // Official_Signup Schema
 const User = require("./models/college_signup");
@@ -185,10 +184,10 @@ app.post("/applyform", async (req, res) => {
         "College with this email id is already registered in our system"
       );
     } else if (geolocation) {
-      res.send("You have alredy registed. Kindly wait"
-      );
+      res.send("You have alredy registed. Kindly wait");
     } else {
       const college_data = new College_Data({
+        applicationnumber: req.body.applicationnumber,
         universityname: req.body.universityname,
         address: req.body.address,
         pincode: req.body.pincode,

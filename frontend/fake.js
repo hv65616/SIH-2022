@@ -11,7 +11,7 @@ const readTextFile = (file, callback) => {
     rawFile.send(null);
   };
   
-  readTextFile("https://raw.githubusercontent.com/AyushAgnihotri2025/SIH-2022/master/backend/fake.json", (text) => {
+  readTextFile("./fake.json", (text) => {
     const dat = JSON.parse(text); 
     const data = dat.fake;
     console.log(dat.fake);

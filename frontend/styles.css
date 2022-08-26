@@ -7,22 +7,17 @@ body {
   height: 96vh;
   overflow-x: hidden;
 }
-h1{
-  margin-left: 35%;
-}
 
-/*logo bar position*/
+
+/*container containing header, bg image and heading*/
 #container1_1{
+  position: relative;
   display: flex;
   flex-direction: column;
-}
-
-/*logo bar styling*/
-#container1_1 {
   background-size: cover;
   background-repeat: no-repeat;
+  /*background-color: aqua;*/
 }
-
 
 
 /*complete serach box position and styling*/
@@ -37,26 +32,28 @@ h1{
 #search1 {
   position: relative;
   background-color: #293241;
-  height: 50px;
+  height: 8vh;
   width: 60vw;
-  border-radius: 10px;
+  border-radius: 0.5vw;
   display: flex;
   top: 5vh;
-  padding: 10px 10px 20px 10px;
+  padding: 0.8vw 0.8vw 1.6vw 0.8vw;
   align-items: center;
-  box-shadow: 0 5px 5px 3px gainsboro;
+  box-shadow: 0vw 0.4vw 0.4vw 0.25vw gainsboro;
 }
 
 /*search bar within text*/
 #search1>input[type="text"] {
   height: 35%;
-  margin: 8px 0;
-  border-radius: 5px;
-  padding-left: 10px;
-  font-size: 16px;
+  margin: 0.6vw 0vw;
+  border-radius: 0.4vw;
+  padding-left: 0.8vw;
+  font-size: 1vw;
   width: 95%;
-  border: 1.5px solid #f1f1ef;
+  position: relative;
 }
+
+
 
 /*login button at the top right*/
 #Login-button1 {
@@ -146,8 +143,8 @@ h1{
 
 /*welcome heading position and styling*/
 #homepageheading1 {
+  margin-left:35% ;
   margin-top: 3vw;
-  font-size: 35px;
 }
 
 /*search button in the search bar position and styling*/
@@ -188,24 +185,24 @@ h1{
 }
 /*for positioning of squares*/
 #statistics1{
-  height: 500px;
-  width:690px;
-  position: absolute;
+  height: 15vw;
+  width:45vw;
+  position: relative;
   display: flex;
   flex-direction: row;
-  top: 1100px;
-  left: 100px;
+  top: 30vw;
+  left: 8vw;
   /*background-color: aqua;*/
 }
 /*for measurement of squares*/
 .square {
   position: relative;
-  height: 230px;
-  width: 230px;
+  text-align: center;
+  height: 15vw;
+  width: 15vw;
 }
 /*for individual squares*/
 #sqaure1{
-
   background-color: red;
 }
 
@@ -218,81 +215,83 @@ h1{
 }
 /*for data written above sqaure*/
 #heading1{
-  font-size:50px;
-  margin-left:0%;
-  margin-top: 150px;
+  position: relative;
+  font-size:3.2vw;
   text-align: center;
+  top: -7vw;
 }
 
 #heading2{
-  font-size:45px;
-  margin-left: 0%;
+  position: relative;
+  font-size:2.9vw;
   text-align: center;
+  top: -7vw;
   
 }
+
+/*for image1_2 in homepgae*/
+#image1_2 {
+  position: relative;
+  top: 2vw;
+  left: 57vw;
+}
+
+/*for third section of home page*/
 #heading1-1, #heading1-2 {
   margin-left: 0%;
   /*background-color: aquamarine;*/
   display: inline;
 }
-/*for image1_2 in homepgae*/
-#image1_2 {
-  position: absolute;
-  top: 970px;
-  right: 120px;
-}
+
 
 /*message for students*/
 #box1-1{
-  width: 450px;
+  position: relative;
+  width: 30vw;
   /*border: 5px solid green;*/
-  padding: 50px;
-  margin: 50px;
-  margin-top: 500px;
+  padding: 4vw;
   margin-left: 7vw;
-  height: 250px; ;
+  margin-right: 7vw;
+  height: 15vw;
+ 
  
 }
 
-#text1{
+#text1, #text2{
   font-weight: lighter;
-  font-size: 20px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-#text2{
-  font-weight: lighter;
-  font-size: 20px;
+  font-size: 1.2vw;
   text-align: justify;
   text-justify: inter-word;
 }
 
 /*message for university*/
 #box1-2{
-  width: 550px;
+  position: relative;
+  width: 30vw;
   /*border: 5px solid green;*/
-  padding: 50px;
-  margin: 50px;
-  margin-top: 150px;
-  margin-left: 750px;
-  height: 250px;
+  padding: 4vw;
+  margin-top: 8vw;
+  margin-left: 50vw;
+  margin-right: 20vw;
+  height: 20vw;
 }
 
 /*for home page third section image*/
 #image1_3{
-  position: absolute;
-  top: 1700px;
-  left: 160px;
+  position: relative;
+  margin-top: -45vw;
+  left: 11vw;
 }
 
 #image1_4{
-  position: absolute;
-  top: 1400px;
-  right: 170px;
+  position: relative;
+  margin-top: -55vw;
+  left: 53vw;
 }
 
 /*footer block position */
 .footer1 {
+  position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -313,7 +312,7 @@ h1{
 .col_1 a, .col_2 p, .col_3 p {
   text-decoration: none;
   display:block;
-  margin-bottom: 10px;
+  margin-bottom: 0.8vw;
   color: black;
   font-size: small;
 }

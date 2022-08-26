@@ -70,6 +70,7 @@ body {
   /*text under sign up button*/
   #text2 {
     margin-left: 3vw;
+    font-size:12px;
   }
 
   /*signup page image*/
@@ -168,6 +169,7 @@ body {
 
   #text2 {
     margin-left: 3vw;
+    font-size: 12px;
   }
 
   #image2 {
@@ -191,4 +193,31 @@ body {
     font-weight: lighter;
     font-size: 15px;
   }
+}
+
+
+  .tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 420px;
+  background-color:black;
+  color: white;
+  text-align: justify;
+  border-radius: 6px;
+  padding: 5px 5px;
+  font-size: 14px;
+
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }

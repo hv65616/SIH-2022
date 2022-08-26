@@ -7,6 +7,9 @@ body {
   height: 96vh;
   overflow-x: hidden;
 }
+h1{
+  margin-left: 35%;
+}
 
 /*logo bar position*/
 #container1_1{
@@ -58,8 +61,8 @@ body {
 /*login button at the top right*/
 #Login-button1 {
 
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 11px;
   border-radius: 5px;
   border: none;
@@ -71,14 +74,14 @@ body {
 
 /*onclick login button shadow*/
 #Login-button1:hover {
-  background-color: #f65b35;
+  /*background-color: #f65b35;*/
   cursor: pointer;
 }
 
 /*signup button at the top right*/
 #Sign-up-button1 {
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 11px;
   border-radius: 5px;
   border: none;
@@ -90,7 +93,7 @@ body {
 
 /*onclick signup button shadow*/
 #Sign-up-button1:hover {
-  background-color: #f65b35;
+  /*background-color: #f65b35;*/
   cursor: pointer;
 }
 /*navigation bar at the top right*/
@@ -113,12 +116,12 @@ body {
   margin-left: 10px;
   text-decoration: none;
   font-size: 15px;
-  color: #EE6644;
+  color: #ffffff;
 }
 
 #Fake1 {
- background-color: rgb(246, 4, 4);
- color: #ffffff;
+ background-color: #ffffff;
+ color: #293241;
   font-size: 13px;
   border-radius: 5px;
   border: none;
@@ -129,7 +132,7 @@ body {
 }
 
 #Fake1:hover {
-  background-color:rgb(219, 9, 9);
+  /*background-color:rgb(219, 9, 9);*/
   cursor: pointer;
 }
 
@@ -216,13 +219,21 @@ body {
 /*for data written above sqaure*/
 #heading1{
   font-size:50px;
-  margin-left: 400px;
+  margin-left:0%;
   margin-top: 150px;
+  text-align: center;
 }
 
 #heading2{
   font-size:45px;
+  margin-left: 0%;
   text-align: center;
+  
+}
+#heading1-1, #heading1-2 {
+  margin-left: 0%;
+  /*background-color: aquamarine;*/
+  display: inline;
 }
 /*for image1_2 in homepgae*/
 #image1_2 {
@@ -246,6 +257,14 @@ body {
 #text1{
   font-weight: lighter;
   font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#text2{
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*message for university*/
@@ -331,8 +350,8 @@ body {
 
 #homebutton1 {
 
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 13px;
   border-radius: 5px;
   border: none;
@@ -343,6 +362,6 @@ body {
 }
 
 #homebutton1:hover {
-  background-color: #f65b35;
+  /*background-color: #f65b35;*/
   cursor: pointer;
 }

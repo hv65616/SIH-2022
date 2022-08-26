@@ -4,7 +4,8 @@ body{
 
 /*heading for About us*/
 #heading4{
-  
+  margin-top: 8%;
+  text-align: center;
   font-size: 70px;
 }
 
@@ -49,7 +50,7 @@ body{
 }
 
 /*styling for the text*/
-#text4{
+#text4-1, #text4-2, #text4-3{
   text-align: justify;
   text-justify: inter-word;
   font-weight: lighter;
@@ -80,8 +81,8 @@ body{
 /*login button at the top right*/
 #Login-button1 {
 
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 11px;
   border-radius: 5px;
   border: none;
@@ -93,14 +94,14 @@ body{
 
 /*onclick login button shadow*/
 #Login-button1:hover {
-  background-color: #f65b35;
+  /*background-color: #f65b35;*/
   cursor: pointer;
 }
 
 /*signup button at the top right*/
 #Sign-up-button1 {
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 11px;
   border-radius: 5px;
   border: none;
@@ -112,7 +113,7 @@ body{
 
 /*onclick signup button shadow*/
 #Sign-up-button1:hover {
-  background-color: #f65b35;
+  /*background-color: #f65b35;*/
   cursor: pointer;
 }
 /*navigation bar at the top right*/
@@ -136,12 +137,12 @@ body{
   margin-left: 10px;
   text-decoration: none;
   font-size: 15px;
-  color: #EE6644;
+  color: #ffffff;
 }
 
 #Fake1 {
- background-color: rgb(246, 4, 4);
- color: #ffffff;
+ background-color: #ffffff;
+ color: #293241;
   font-size: 13px;
   border-radius: 5px;
   border: none;
@@ -152,7 +153,7 @@ body{
 }
 
 #Fake1:hover {
-  background-color:rgb(219, 9, 9);
+  /*background-color:rgb(219, 9, 9);*/
   cursor: pointer;
 }
 #container11 {
@@ -179,8 +180,8 @@ body{
 
 #homebutton1 {
 
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 13px;
   border-radius: 5px;
   border: none;
@@ -191,7 +192,7 @@ body{
 }
 
 #homebutton1:hover {
-  background-color: #f65b35;
+  /*background-color: #f65b35;*/
   cursor: pointer;
 }
 /*fake un
@@ -212,12 +213,13 @@ body{
   text-align: center;
   flex-grow: 0.2;
   right:100vw;
-  font-weight: 300vw;
   margin-bottom: 0vw;
   margin-left: 100px;
 }
 
-
+.col4_1{
+  margin-top: 10px;
+}
 .col4_1 a, .col4_2 p, .col4_3 p {
   text-decoration: none;
   display:block;

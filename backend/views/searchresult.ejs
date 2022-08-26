@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Document</title>
 </head>
+
 <body>
-    <h1><%= universityname %> </h1>
-    <h1>
-        <%= address %>
-    </h1>
-    <h1>
-        <%= state %>
-    </h1>
+    <% if(temp){%>
+        <h1>
+            <%= universityname %>
+        </h1>
+        <h1>
+            <%= address %>
+        </h1>
+        <h1>
+            <%= state %>
+        </h1>
+        <%} %>
+            <% if(temp=='0' ){%>
+                <h1>No University With This Name Is Verified By The UGC</h1>
+                <%} %>
 </body>
+
 </html>

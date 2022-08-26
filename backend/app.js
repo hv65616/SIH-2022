@@ -179,9 +179,9 @@ app.get("/search_university", (req, res, next) => {
   } else {
     res.render("searchresult", {
       temp: "0",
-      universityname: "",
-      address: "",
-      state: "",
+      universityname: "NA",
+      address: "NA",
+      state: "NA",
     });
   }
 });

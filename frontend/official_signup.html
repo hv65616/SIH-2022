@@ -8,6 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signupstyles.css">
     <title>Wizard signup page</title>
+
+    <script>
+        function ValidateEmail(inputText)
+        {
+        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        if(inputText.value.match(mailformat))
+        {
+        document.test1.password.focus();
+        return true;
+        }
+        else
+        {
+        alert("You have entered an invalid email address!");
+        document.test1.email.focus();
+        return false;
+        }
+        }
+        
+        function CheckPassword(inputtxt) 
+        { 
+        var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+        if(inputtxt.value.match(decimal)) 
+        { 
+        document.test1.confirmpassword.focus();
+        return true;
+        }
+        else
+        { 
+        alert('Entered password does not match the parameters!')
+        document.test1.password.focus();
+        return false;
+        }
+        
+        }
+        
+           </script>
+
 </head>
 
 <body>
@@ -20,7 +57,7 @@
         <div id="contain2">
             <!--container for complete signup block-->
             <div id="container2">
-                <form action="/official_signup" method="POST">
+                <form action="/official_signup" method="POST" form name="test1">
                     <h1 id="heading2">HEI/University Sign Up</h1>
                     <label for="university2"><b>HEI/University Name</b></label>
                     <!--university area-->
@@ -31,14 +68,17 @@
                     <input name="username" type="text" placeholder="Enter your Username" id="username2" required>
                     <label for="email2"><b>Email</b></label>
                     <!--email area-->
-                    <input name="email" type="email" placeholder="Enter your Email" id="email2" required>
-                    <label for="password2"><b>Password</b></label>
+                    <input name="email" type="text" placeholder="Enter your Email" id="email2" required>
+                    <label for="password2"><b>Password</b><h4 id="passhead">(*Must be a combination of atleast one lowercase character ,
+                        one<br>uppercase character, one numeric digit and one
+                        special character<br> within the range of 8-15 characters.)</h4></label>
                     <!--password area-->
-                    <input type="password" id="password2" name="password2" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" placeholder="Enter your Password" required>
+                    <input name="password" type="password" title="Must be a combination of atleast one lowercase character,
+one uppercase character, one numeric digit and one
+special character within the range of 8-15 characters." placeholder="Enter Password" id="password2" onfocus="ValidateEmail(document.test1.email)" required>
                     <label for="passwordrep2"><b>Confirm Password</b></label>
                     <!--confirm password area-->
-                    <input name="confirmpassword" type="password" placeholder="Confirm Password" id="passwordrep2"
-                        required>
+                    <input name="confirmpassword" type="password" placeholder="Confirm Password" id="passwordrep2" onfocus="CheckPassword(document.test1.password)" required>
                     <!-- <input type="button" value="REGISTER" id="Sign-up-button2"/> -->
                     <button type="submit" id="Sign-up-button2">Register</button>
 

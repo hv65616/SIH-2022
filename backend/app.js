@@ -5,6 +5,8 @@ const bodyParser = require("body-parser");
 const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
+const mergedDataset = require("./scraper/merged.json");
+const {merge_and_store_results,get_merged_results } = require("./scraper/utils/mergefiles");
 
 // Official_Signup Schema
 const User = require("./models/college_signup");
@@ -94,7 +96,9 @@ app.post(
   body("email").isEmail().normalizeEmail(),
   async (req, res) => {
     try {
+      const usernameExists = await User.findOne({username: req.body.username});
       const error = validationResult(req);
+      if (usernameExists) return res.status(400).send("Username already taken");
       if (error.isEmpty() != true) {
         res.send("Email is not valid");
       } else {
@@ -141,6 +145,52 @@ app.post("/official_login", async (req, res) => {
     res.status(400).send("Invalid");
   }
 });
+
+
+/**
+ * This function will search for a university name in the state, deemed, private and central universities through the merged.json file
+ * @params{university_name:String} -> the university you are searching for
+ */
+app.get("/search_university",(req,res,next)=>{
+  if(!req.query.university_name){
+    return next(new Error("Pass university_name in the query parameter"))
+  }
+  let searchable_dataset  = {};
+  if(!mergedDataset){
+    //merged data set is empty
+    searchable_dataset = get_merged_results()
+  }else{
+    searchable_dataset = mergedDataset;
+  }
+  let correct_index = -1;
+  for(let i=0;i<searchable_dataset.data.length;i++){
+    if(searchable_dataset.data[i].university_name.toLowerCase().trim() == req.query.university_name.toLowerCase().trim()){
+      correct_index = i;
+      break;
+    }
+  }
+  if(correct_index!=-1){
+    res.send({
+      success:true,
+      data:{
+        university:[
+          searchable_dataset.data[correct_index]
+        ]
+      },
+      errors:[]
+    })
+  }else{
+    res.send({
+      success:false,
+      data:{},
+      errors:[
+        {
+          name:"couldn't find the university"
+        }
+      ]
+    })
+  }
+})
 
 // Post Request
 app.post("/contactus", (req, res) => {
@@ -213,6 +263,7 @@ app.post("/applyform", async (req, res) => {
 
 app.post("/accepted", (req, res) => {});
 
-app.listen(process.env.PORT || 3000, (req, res) => {
-  console.log(`Server started on port ${process.env.PORT}`);
+const PORT = process.env.PORT || 3000
+app.listen(PORT, (req, res) => {
+  console.log(`Server started on port ${PORT }`);
 });

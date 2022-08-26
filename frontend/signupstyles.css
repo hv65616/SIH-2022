@@ -90,6 +90,13 @@ body {
     width: 580px;
     height: 680px;
   }
+
+  #passhead{
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: lighter;
+    font-size: 15px;
+  }
 }
 
 /* Look for mobile phone screens */
@@ -176,5 +183,12 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  #passhead{
+    text-align: justify;
+    text-justify: inter-word;
+    font-weight: lighter;
+    font-size: 15px;
   }
 }

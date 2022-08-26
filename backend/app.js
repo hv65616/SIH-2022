@@ -83,16 +83,9 @@ app.get("/ugcofficial", (req, res) => {
 
 //fake university
 app.get("/fakeuniv", (req, res) => {
-  Fake_Univ.find({}, (err, docs) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.render("fakeuniv", { details: docs });
-      // console.log("working fake univ");
-    }
-  });
+  res.sendFile(path.join(__dirname, "../frontend/fake.html"));
 });
-
+console.log(path.join(__dirname, "../frontend/fake.html"));
 // POST reqquest
 app.post(
   "/official_signup",
@@ -177,15 +170,15 @@ app.get("/search_university", (req, res, next) => {
     }
   }
   if (correct_index != -1) {
-    res.render('searchresult', {
-      temp : '1',
+    res.render("searchresult", {
+      temp: "1",
       universityname: [searchable_dataset.data[correct_index].university_name],
       address: [searchable_dataset.data[correct_index].address],
       state: [searchable_dataset.data[correct_index].state],
     });
   } else {
     res.render("searchresult", {
-      temp: '0',
+      temp: "0",
       universityname: "",
       address: "",
       state: "",

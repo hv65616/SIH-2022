@@ -10,40 +10,34 @@
     <title>HEI Sign Up page</title>
 
     <script>
-        function ValidateEmail(inputText)
-        {
-        var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(inputText.value.match(mailformat))
-        {
-        document.test1.password.focus();
-        return true;
+        function ValidateEmail(inputText) {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (inputText.value.match(mailformat)) {
+                document.test1.password.focus();
+                return true;
+            }
+            else {
+                alert("You have entered an invalid email address!");
+                document.test1.email.focus();
+                return false;
+            }
         }
-        else
-        {
-        alert("You have entered an invalid email address!");
-        document.test1.email.focus();
-        return false;
+
+        function CheckPassword(inputtxt) {
+            var decimal = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
+            if (inputtxt.value.match(decimal)) {
+                document.test1.confirmpassword.focus();
+                return true;
+            }
+            else {
+                alert('Entered password does not match the parameters!')
+                document.test1.password.focus();
+                return false;
+            }
+
         }
-        }
-        
-        function CheckPassword(inputtxt) 
-        { 
-        var decimal=  /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/;
-        if(inputtxt.value.match(decimal)) 
-        { 
-        document.test1.confirmpassword.focus();
-        return true;
-        }
-        else
-        { 
-        alert('Entered password does not match the parameters!')
-        document.test1.password.focus();
-        return false;
-        }
-        
-        }
-        
-           </script>
+
+    </script>
 
 </head>
 
@@ -69,14 +63,29 @@
                     <label for="email2"><b>Email</b></label>
                     <!--email area-->
                     <input name="email" type="text" placeholder="Enter your Email" id="email2" required>
-                    <label for="password2"><b>Password  </b></label><div class="tooltip">&#x1F6C8;
-                        <span class="tooltiptext">Must be a combination of atleast one lowercase character, one uppercase character, one numeric digit and one special character within the range of 8-15 characters.</span>
+                    <label for="password2"><b>Password  </b></label>
+                    <div class="tooltip">&#x1F6C8;
+                         <span class="tooltiptext">Must be a combination of atleast one lowercase character, one uppercase character, one numeric digit and one special character within the range of 8-15 characters.</span>
                     </div>
-                    <!--password area-->
-                    <input name="password" type="password" placeholder="Enter Password" id="password2" onfocus="ValidateEmail(document.test1.email)" required>
+                    <input name="password" type="password" placeholder="Enter Password" id="password2" onfocus="ValidateEmail(document.test1.email2)" required>
+                    <input type="checkbox" onclick="myFunction()">Show Password
+                    <label id='validatePwd'>
+                            <script>
+                            function myFunction() {
+                            var x = document.getElementById("password2");
+                            if (x.type === "password") {
+                                x.type = "text";
+                            } else {
+                                x.type = "password";
+                            }
+                            }
+                            </script>
+                    <br><br>
+                    
                     <label for="passwordrep2"><b>Confirm Password</b></label>
                     <!--confirm password area-->
-                    <input name="confirmpassword" type="password" placeholder="Confirm Password" id="passwordrep2" onfocus="CheckPassword(document.test1.password)" required>
+                    <input name="confirmpassword" type="password" placeholder="Confirm Password" id="passwordrep2"
+                        onfocus="CheckPassword(document.test1.password)" required>
                     <!-- <input type="button" value="REGISTER" id="Sign-up-button2"/> -->
                     <button type="submit" id="Sign-up-button2">Register</button>
 
@@ -88,4 +97,5 @@
         </div>
     </div>
 </body>
+
 </html>

@@ -57,7 +57,7 @@
         <div id="contain2">
             <!--container for complete signup block-->
             <div id="container2">
-                <form action="/official_signup" method="POST">
+                <form action="/official_signup" method="POST" form name="test1">
                     <h1 id="heading2">HEI/University Sign Up</h1>
                     <label for="university2"><b>HEI/University Name</b></label>
                     <!--university area-->
@@ -69,9 +69,13 @@
                     <label for="email2"><b>Email</b></label>
                     <!--email area-->
                     <input name="email" type="text" placeholder="Enter your Email" id="email2" required>
-                    <label for="password2"><b>Password</b></label>
+                    <label for="password2"><b>Password</b><h4 id="passhead">(*Must be a combination of atleast one lowercase character ,
+                        one<br>uppercase character, one numeric digit and one
+                        special character<br> within the range of 8-15 characters.)</h4></label>
                     <!--password area-->
-                    <input name="password" type="password" placeholder="Enter Password" id="password2" onfocus="ValidateEmail(document.test1.email)" required>
+                    <input name="password" type="password" title="Must be a combination of atleast one lowercase character,
+one uppercase character, one numeric digit and one
+special character within the range of 8-15 characters." placeholder="Enter Password" id="password2" onfocus="ValidateEmail(document.test1.email)" required>
                     <label for="passwordrep2"><b>Confirm Password</b></label>
                     <!--confirm password area-->
                     <input name="confirmpassword" type="password" placeholder="Confirm Password" id="passwordrep2" onfocus="CheckPassword(document.test1.password)" required>

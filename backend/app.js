@@ -6,7 +6,10 @@ const fs = require("fs");
 const nodemailer = require("nodemailer");
 const { body, validationResult } = require("express-validator");
 const mergedDataset = require("./scraper/merged.json");
-const {merge_and_store_results,get_merged_results } = require("./scraper/utils/mergefiles");
+const {
+  merge_and_store_results,
+  get_merged_results,
+} = require("./scraper/utils/mergefiles");
 
 // Official_Signup Schema
 const User = require("./models/college_signup");
@@ -96,7 +99,9 @@ app.post(
   body("email").isEmail().normalizeEmail(),
   async (req, res) => {
     try {
-      const usernameExists = await User.findOne({username: req.body.username});
+      const usernameExists = await User.findOne({
+        username: req.body.username,
+      });
       const error = validationResult(req);
       if (usernameExists) return res.status(400).send("Username already taken");
       if (error.isEmpty() != true) {
@@ -146,51 +151,63 @@ app.post("/official_login", async (req, res) => {
   }
 });
 
-
 /**
  * This function will search for a university name in the state, deemed, private and central universities through the merged.json file
  * @params{university_name:String} -> the university you are searching for
  */
-app.get("/search_university",(req,res,next)=>{
-  if(!req.query.university_name){
-    return next(new Error("Pass university_name in the query parameter"))
+app.get("/search_university", (req, res, next) => {
+  if (!req.query.university_name) {
+    return next(new Error("Pass university_name in the query parameter"));
   }
-  let searchable_dataset  = {};
-  if(!mergedDataset){
+  let searchable_dataset = {};
+  if (!mergedDataset) {
     //merged data set is empty
-    searchable_dataset = get_merged_results()
-  }else{
+    searchable_dataset = get_merged_results();
+  } else {
     searchable_dataset = mergedDataset;
   }
   let correct_index = -1;
-  for(let i=0;i<searchable_dataset.data.length;i++){
-    if(searchable_dataset.data[i].university_name.toLowerCase().trim() == req.query.university_name.toLowerCase().trim()){
+  for (let i = 0; i < searchable_dataset.data.length; i++) {
+    if (
+      searchable_dataset.data[i].university_name.toLowerCase().trim() ==
+      req.query.university_name.toLowerCase().trim()
+    ) {
       correct_index = i;
       break;
     }
   }
-  if(correct_index!=-1){
-    res.send({
-      success:true,
-      data:{
-        university:[
-          searchable_dataset.data[correct_index]
-        ]
-      },
-      errors:[]
-    })
-  }else{
-    res.send({
-      success:false,
-      data:{},
-      errors:[
-        {
-          name:"couldn't find the university"
-        }
-      ]
-    })
+  if (correct_index != -1) {
+    // res.send({
+    //   success:true,
+    //   data:{
+    //     university:[
+    //       searchable_dataset.data[correct_index]
+    //     ]
+    //   },
+    //   errors:[]
+    // })
+    res.send(
+      // data:{
+      //   university:[
+      //     searchable_dataset.data[correct_index].university_name
+      //   ]
+      // }
+      // university: [searchable_dataset.data[correct_index].university_name],
+      "Searched University Is Approved By UGC"
+    );
+  } else {
+    res.send(
+      // success: false,
+      // data: {},
+      // errors: [
+      //   {
+      //     name: "couldn't find the university",
+      //   },
+      // ],
+      "Searched University Is Not Found In UGC Approved List Of University. Please Check In Fake University List Under Fake University Tag"
+    );
   }
-})
+});
 
 // Post Request
 app.post("/contactus", (req, res) => {
@@ -226,31 +243,31 @@ app.post("/contactus", (req, res) => {
 app.post("/applyform", async (req, res) => {
   try {
     let college_email = await College_Data.findOne({ email: req.body.email });
-    let geolocation = await College_Data.findOne({
-      geolocation: req.body.geolocation,
-    });
     if (college_email) {
       res.send(
         "College with this email id is already registered in our system"
       );
-    } else if (geolocation) {
-      res.send("You have alredy registed. Kindly wait");
     } else {
       const college_data = new College_Data({
         applicationnumber: req.body.applicationnumber,
         universityname: req.body.universityname,
         address: req.body.address,
+        city: req.body.city,
         pincode: req.body.pincode,
-        state: req.body.state,
+        state: req.body.stateut9,
         geolocation: req.body.geolocation,
         contact: req.body.contact,
-        faxnumber: req.body.faxnumber,
         email: req.body.email,
         website: req.body.website,
         programmes: req.body.programmes,
-        aicte: req.body.aicte,
+        other91: req.body.other91,
+        uploadlink1: req.body.upload92,
         nba: req.body.nba,
+        uploadlink2: req.body.upload93,
         naac: req.body.naac,
+        uploadlink3: req.body.upload94,
+        otheraccre: req.body.other,
+        uploadlink4: req.body.upload95,
       });
       const data = await college_data.save();
       res.sendFile(path.join(__dirname, "../frontend/applyformsuccess.html"));
@@ -263,7 +280,7 @@ app.post("/applyform", async (req, res) => {
 
 app.post("/accepted", (req, res) => {});
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, (req, res) => {
-  console.log(`Server started on port ${PORT }`);
+  console.log(`Server started on port ${PORT}`);
 });

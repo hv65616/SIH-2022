@@ -31,6 +31,7 @@ connectToMongo();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.set("views", path.join(__dirname, "/backend/views"));
 app.set("view engine", "ejs");
 
 const staticpath = path.join(__dirname, "../frontend");

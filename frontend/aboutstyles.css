@@ -4,7 +4,8 @@ body{
 
 /*heading for About us*/
 #heading4{
-  
+  margin-top: 8%;
+  text-align: center;
   font-size: 70px;
 }
 
@@ -49,7 +50,7 @@ body{
 }
 
 /*styling for the text*/
-#text4{
+#text4-1, #text4_2, #text4_3{
   text-align: justify;
   text-justify: inter-word;
   font-weight: lighter;
@@ -212,7 +213,6 @@ body{
   text-align: center;
   flex-grow: 0.2;
   right:100vw;
-  font-weight: 300vw;
   margin-bottom: 0vw;
   margin-left: 100px;
 }

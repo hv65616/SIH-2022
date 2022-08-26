@@ -13,6 +13,10 @@ const College_Data_Schema = new Schema({
     type: String,
     required: true,
   },
+  city: {
+    type: String,
+    required: true,
+  },
   pincode: {
     type: Number,
     required: true,
@@ -21,18 +25,7 @@ const College_Data_Schema = new Schema({
     type: String,
     required: true,
   },
-  geolocation: [
-    {
-      type: String,
-      required: true,
-      unique: true,
-    },
-  ],
   contact: {
-    type: Number,
-    required: true,
-  },
-  faxnumber: {
     type: String,
     required: true,
   },
@@ -51,17 +44,29 @@ const College_Data_Schema = new Schema({
       required: true,
     },
   ],
-  aicte: {
+  others: {
     type: String,
-    required: true,
+  },
+  uploadlink1: {
+    type: String,
   },
   nba: {
     type: String,
-    required: true,
+  },
+  uploadlink2: {
+    type: String,
   },
   naac: {
     type: String,
-    required: true,
+  },
+  uploadlink3: {
+    type: String,
+  },
+  otheraccre: {
+    type: String,
+  },
+  uploadlink4: {
+    type: String,
   },
   date: {
     type: Date,

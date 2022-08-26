@@ -7,6 +7,9 @@ body {
   height: 96vh;
   overflow-x: hidden;
 }
+h1{
+  margin-left: 35%;
+}
 
 /*logo bar position*/
 #container1_1{
@@ -216,13 +219,21 @@ body {
 /*for data written above sqaure*/
 #heading1{
   font-size:50px;
-  margin-left: 400px;
+  margin-left:0%;
   margin-top: 150px;
+  text-align: center;
 }
 
 #heading2{
   font-size:45px;
+  margin-left: 0%;
   text-align: center;
+  
+}
+#heading1-1, #heading1-2 {
+  margin-left: 0%;
+  background-color: aquamarine;
+  display: inline;
 }
 /*for image1_2 in homepgae*/
 #image1_2 {
@@ -246,6 +257,14 @@ body {
 #text1{
   font-weight: lighter;
   font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+#text2{
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 /*message for university*/

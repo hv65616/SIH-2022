@@ -8,6 +8,14 @@ body{
   font-size: 70px;
 }
 
+#container4 {
+  position: relative;
+  top: -100px;
+  
+  width: 100%;
+  /*background-color: aqua;*/
+}
+
 /*to position want to know us text*/
 #box4-1{
   width: 350px;
@@ -57,7 +65,7 @@ body{
 
 /*to position vision and mission image*/
 #image4_2{
-  position: absolute;
+  position:absolute;
   top: 595px;
   left: 140px;
 }
@@ -109,15 +117,15 @@ body{
 }
 /*navigation bar at the top right*/
 #navigation1 {
-  position: absolute;
+  position: relative;
   height: 25px;
   width: 495px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   display: flex;
   flex-direction: row;
-  margin-top: -5vw;
-  margin-left: 65vw;
+  margin-top: 0vw;
+  margin-left: 36vw;
   padding: 15px 0px 20px 10px;
   align-items: center;
   background-color: #293241;
@@ -148,18 +156,20 @@ body{
   cursor: pointer;
 }
 #container11 {
-  position: absolute;
+  position: relative;
   height: 25px;
-  border-radius: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction:row;
   padding: 31px 10px 31px 10px;
   align-items: center;
+  background-color: #f8dad3;
+  width: 99.5%;
+  margin-top: -10px;
 }
 
 /*logo position within block*/
 #logo1, #logo2{
-  margin-top: -5vw;
+  margin-top: 0vw;
 }
 
 #bg1{
@@ -216,27 +226,6 @@ body{
   font-size: small;
 }
 
-/*
-.social{
-  padding: 30px 15%;
-  
-  
-}
-
-#icons{
-  margin-left: 350px;
-}
-
-.social a{
-  cursor: pointer;
-  color: #f1f1ef;
-  text-decoration: none;
-  margin-left: 50px;
-  font-size: 30px;
-  
-
-}
-*/
 
 /*copyright block in footer*/
 .copyright4{

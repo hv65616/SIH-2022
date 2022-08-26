@@ -177,35 +177,19 @@ app.get("/search_university", (req, res, next) => {
     }
   }
   if (correct_index != -1) {
-    // res.send({
-    //   success:true,
-    //   data:{
-    //     university:[
-    //       searchable_dataset.data[correct_index]
-    //     ]
-    //   },
-    //   errors:[]
-    // })
-    res.send(
-      // data:{
-      //   university:[
-      //     searchable_dataset.data[correct_index].university_name
-      //   ]
-      // }
-      // university: [searchable_dataset.data[correct_index].university_name],
-      "Searched University Is Approved By UGC"
-    );
+    res.render('searchresult', {
+      temp : '1',
+      universityname: [searchable_dataset.data[correct_index].university_name],
+      address: [searchable_dataset.data[correct_index].address],
+      state: [searchable_dataset.data[correct_index].state],
+    });
   } else {
-    res.send(
-      // success: false,
-      // data: {},
-      // errors: [
-      //   {
-      //     name: "couldn't find the university",
-      //   },
-      // ],
-      "Searched University Is Not Found In UGC Approved List Of University. Please Check In Fake University List Under Fake University Tag"
-    );
+    res.render("searchresult", {
+      temp: '0',
+      universityname: "",
+      address: "",
+      state: "",
+    });
   }
 });
 

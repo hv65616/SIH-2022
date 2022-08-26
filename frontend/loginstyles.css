@@ -131,7 +131,7 @@ body {
         background-color: #EE6644;
         color: white;
         padding: 14px 20px;
-        margin: 8px 0;
+        margin: 2% 0% 0% 39%;
         border: none;
         cursor: pointer;
         opacity: 0.9;
@@ -160,6 +160,11 @@ body {
     img {
         width: 600px;
         height: 700px;
+    }
+
+    #heading3 {
+        text-align: center;
+        margin-left: 1.8%;
     }
 }
 
@@ -232,6 +237,7 @@ body {
 
     #heading3 {
         text-align: center;
+        margin-left: 3%;
     }
 
     #image3 {

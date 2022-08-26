@@ -164,14 +164,15 @@ body {
 
 /*container for logo...big one*/
 #container11 {
-  position: absolute;
+  position: relative;
   height: 25px;
-  border-radius: 10px;
   display: flex;
   flex-direction: row;
   padding: 31px 10px 31px 10px;
   align-items: center;
   width:99vw;
+  background-color: #f8dad3;
+  margin-top: -10px;
 }
 
 /*logo position within block*/
@@ -180,7 +181,7 @@ body {
 }
 
 #bg1{
-  margin-top: 6vw;
+  margin-top: -0.5vw;
 }
 /*for positioning of squares*/
 #statistics1{

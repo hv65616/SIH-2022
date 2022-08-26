@@ -4,16 +4,25 @@ body{
 
 /*heading for About us*/
 #heading4{
+  
   font-size: 70px;
+}
+
+#container4 {
+  position: relative;
+  top: -100px;
+  
+  width: 100%;
+  /*background-color: aqua;*/
 }
 
 /*to position want to know us text*/
 #box4-1{
   width: 350px;
   /*border: 5px solid green;*/
-  padding: 50px;
+  padding-bottom:120px;
   margin: 50px;
-  margin-top: 80px;
+  padding-top: 3px;
   margin-left: 150px;
   height: 300px;
 }
@@ -22,10 +31,9 @@ body{
 #box4-2{
   width: 350px;
   /*border: 5px solid green;*/
-  padding: 50px;
+  margin-top: 100px;
   margin: 50px;
-  margin-top: 80px;
-  margin-left: 900px;
+  margin-left: 950px;
   height: 300px;
 }
 
@@ -35,7 +43,7 @@ body{
   /*border: 5px solid green;*/
   padding: 50px;
   margin: 50px;
-  margin-top: 80px;
+  margin-top: 100px;
   margin-left: 150px;
   height: 300px;
 }
@@ -57,147 +65,139 @@ body{
 
 /*to position vision and mission image*/
 #image4_2{
-  position: absolute;
-  top: 650px;
+  position:absolute;
+  top: 595px;
   left: 140px;
 }
 
 /*to position query based platfrom image*/
 #image4_3{
   position: absolute;
-  top: 1080px;
+  top: 1050px;
   right: 100px;
 }
 
-#contain4 {
-  position: absolute;
-  top:  0px;
-  left: 30px;
-
-}
-/*logo bar position*/
-#container4_1{
-  display: flex;
-  flex-direction: column;
-}
-
-/*logo bar styling*/
-#container4_1 {
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/*to position logo box of the page*/
-#container44{
-  position: absolute;
-  height: 25px;
-  width: 200px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: row;
-  margin-top: 10px;
-  margin-left: 5px;
-  padding: 10px 10px 20px 10px;
-  align-items: center;
-}
-
-/*to position logo within logo box*/
-#logo4_1, #logo4_2{
-  margin-top: 2vw;
-}
-
-/*login button position and style*/
-#Login-button4 {
+/*login button at the top right*/
+#Login-button1 {
 
   background-color: #EE6644;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 5px;
   border: none;
   height: 30px;
   font-weight: bold;
-  width: 60px;
+  width: 72px;
   margin-left: 15px;
 }
 
-/*onclick login shadow*/
-#Login-button4:hover {
-  background-color: #EE6644;
+/*onclick login button shadow*/
+#Login-button1:hover {
+  background-color: #f65b35;
   cursor: pointer;
 }
 
-/*signup button position and style*/
-#Sign-up-button4 {
+/*signup button at the top right*/
+#Sign-up-button1 {
   background-color: #EE6644;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 11px;
   border-radius: 5px;
   border: none;
   height: 30px;
   font-weight: bold;
-  width: 60px;
+  width: 73px;
   margin-left: 15px;
 }
 
-/*onclick signup shadow*/
-#Sign-up-button4:hover {
-  background-color: #EE6644;
+/*onclick signup button shadow*/
+#Sign-up-button1:hover {
+  background-color: #f65b35;
   cursor: pointer;
 }
-
-/*position of the box containing different links*/
-#navigation4 {
-  position: absolute;
+/*navigation bar at the top right*/
+#navigation1 {
+  position: relative;
   height: 25px;
-  width: 415px;
-  border-radius: 10px;
+  width: 495px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
   display: flex;
   flex-direction: row;
-  margin-top: 10px;
-  margin-left: 65vw;
-  padding: 10px 10px 20px 10px;
+  margin-top: 0vw;
+  margin-left: 36vw;
+  padding: 15px 0px 20px 10px;
   align-items: center;
+  background-color: #293241;
 }
 
-/*button position within navigation at the top right*/
-#navigation4-2>a {
+
+#navigation1-2>a {
   margin-left: 10px;
   text-decoration: none;
   font-size: 15px;
   color: #EE6644;
 }
 
-#Fake4{
-  background-color: rgb(246, 4, 4);
-  color: #ffffff;
-   font-size: 13px;
-   border-radius: 5px;
-   border: none;
-   height: 20px;
-   font-weight: bold;
-   width: 50px;
-   margin-left: 15px;
- }
- 
- #Fake4:hover {
-   background-color:rgb(219, 9, 9);
-   cursor: pointer;
- }
- 
-
-
-/*footer class*/
-.footer1 {
-  display: flex;
-  flex-direction: row;
-  width: 1059px;
-  padding: 10px 15%;
-  background:#f8dad3;
-  color: black;
+#Fake1 {
+ background-color: rgb(246, 4, 4);
+ color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 20px;
+  font-weight: bold;
+  width: 50px;
+  margin-left: 15px;
 }
 
+#Fake1:hover {
+  background-color:rgb(219, 9, 9);
+  cursor: pointer;
+}
+#container11 {
+  position: relative;
+  height: 25px;
+  display: flex;
+  flex-direction:row;
+  padding: 31px 10px 31px 10px;
+  align-items: center;
+  background-color: #f8dad3;
+  width: 99.5%;
+  margin-top: -10px;
+}
+
+/*logo position within block*/
+#logo1, #logo2{
+  margin-top: 0vw;
+}
+
+#bg1{
+  margin-top: 6vw;
+}
+
+
+#homebutton1 {
+
+  background-color: #EE6644;
+  color: #ffffff;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  width: 72px;
+  margin-left: 15px;
+}
+
+#homebutton1:hover {
+  background-color: #f65b35;
+  cursor: pointer;
+}
+/*fake un
+
 /*footer block position */
-.footer1 {
+.footer4 {
   display: flex;
   flex-direction: row;
   width: 1059px;
@@ -208,7 +208,7 @@ body{
 
 }
 
-.footer1 div{
+.footer4 div{
   text-align: center;
   flex-grow: 0.2;
   right:100vw;
@@ -218,7 +218,7 @@ body{
 }
 
 
-.col_1 a, .col_2 p, .col_3 p {
+.col4_1 a, .col4_2 p, .col4_3 p {
   text-decoration: none;
   display:block;
   margin-bottom: 10px;
@@ -226,30 +226,9 @@ body{
   font-size: small;
 }
 
-/*
-.social{
-  padding: 30px 15%;
-  
-  
-}
-
-#icons{
-  margin-left: 350px;
-}
-
-.social a{
-  cursor: pointer;
-  color: #f1f1ef;
-  text-decoration: none;
-  margin-left: 50px;
-  font-size: 30px;
-  
-
-}
-*/
 
 /*copyright block in footer*/
-.copyright1{
+.copyright4{
   padding: 0.7vw 15%;
   text-align:center;
   color: #ffffff;

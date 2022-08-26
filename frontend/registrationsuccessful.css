@@ -1,5 +1,5 @@
 body{
-    background-color: #f1f1ef;
+    background-color: #ffffff;
 }
 
 /*complete block of the page*/
@@ -15,9 +15,9 @@ body{
 /*success block of the page*/
 #upper-side6 {
     padding: 2em;
-    background-color: #8BC34A;
+    background-color: #EE6644;
     display: block;
-    color: #fff;
+    color: #f8dad3;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
@@ -35,7 +35,7 @@ body{
 /*message block*/
 #lower-side6 {
     padding: 2em 2em 5em 2em;
-    background: whitesmoke;
+    background: #f8dad3;
     display: block;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
@@ -44,7 +44,7 @@ body{
 /*text message*/
 #message6 {
     margin-top: -.5em;
-    color: #757575;
+    color: #EE6644;
     letter-spacing: 1px;
 }
 
@@ -53,7 +53,7 @@ body{
     position: relative;
     top: 1.5em;
     text-decoration: none;
-    background: #8bc34a;
+    background: #EE6644;
     color: #fff;
     margin: auto;
     padding: .8em 3em;

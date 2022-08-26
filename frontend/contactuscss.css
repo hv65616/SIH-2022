@@ -71,8 +71,8 @@ input[type=email]:focus {
 /*login button at the top right*/
 #Login-button5 {
 
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 11px;
   border-radius: 5px;
   border: none;
@@ -84,14 +84,13 @@ input[type=email]:focus {
 
 /*onclick login button shadow*/
 #Login-button5:hover {
-  background-color: #f65b35;
   cursor: pointer;
 }
 
 /*signup button at the top right*/
 #Sign-up-button5 {
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color:#293241;
   font-size: 11px;
   border-radius: 5px;
   border: none;
@@ -103,7 +102,6 @@ input[type=email]:focus {
 
 /*onclick signup button shadow*/
 #Sign-up-button5:hover {
-  background-color: #f65b35;
   cursor: pointer;
 }
 /*navigation bar at the top right*/
@@ -127,12 +125,12 @@ input[type=email]:focus {
   margin-left: 10px;
   text-decoration: none;
   font-size: 15px;
-  color: #EE6644;
+  color: #ffffff;
 }
 
 #Fake5 {
- background-color: rgb(246, 4, 4);
- color: #ffffff;
+ background-color: #ffffff;
+  color:#293241;
   font-size: 13px;
   border-radius: 5px;
   border: none;
@@ -143,7 +141,6 @@ input[type=email]:focus {
 }
 
 #Fake5:hover {
-  background-color:rgb(219, 9, 9);
   cursor: pointer;
 }
 #container55 {
@@ -165,8 +162,8 @@ input[type=email]:focus {
 
 #homebutton5{
 
-  background-color: #EE6644;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #293241;
   font-size: 13px;
   border-radius: 5px;
   border: none;
@@ -177,7 +174,6 @@ input[type=email]:focus {
 }
 
 #homebutton5:hover {
-  background-color: #f65b35;
   cursor: pointer;
 }
 /*fake un
@@ -198,7 +194,7 @@ input[type=email]:focus {
   text-align: center;
   flex-grow: 0.2;
   right:100vw;
-  font-weight: 300vw;
+  font-weight: 300;
   margin-bottom: 0vw;
   margin-left: 100px;
 }
@@ -218,5 +214,4 @@ input[type=email]:focus {
   color: #ffffff;
   background:#293241;
   width:1059px;
-
 }

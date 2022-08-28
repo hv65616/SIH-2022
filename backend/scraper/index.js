@@ -69,7 +69,7 @@ function sleep(ms) {
 async  function scrape_university (university_type)  {
   //to call single_page_extraction for each url
 
-  let state = data.types.state;
+  let state = data.types[university_type];
   let final_data = [];
 
   for (let i = 0; i < state.length; i++) {
@@ -87,9 +87,9 @@ async  function scrape_university (university_type)  {
 };
 
 //run these functions one at a time and then comment the other three
-scrape_university('state');
+// scrape_university('state');
 // scrape_university('central')
-// scrape_university('deemed')
+scrape_university('deemed')
 // scrape_university('private')
 
 

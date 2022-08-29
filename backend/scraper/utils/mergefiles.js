@@ -23,6 +23,8 @@ function merge_and_store_results(){
       })
 }
 
+merge_and_store_results()
+
 module.exports = {
     merge_and_store_results,
     get_merged_results

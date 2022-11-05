@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-{"state":[{"university_name":"Lakshmibai National Institute of Physical Education","address":"Shaktinagar, Mela Road,\n                              Gwalior - 474002.\n                                M.P.","state":"Madhya Pradesh "},{"university_name":"North Eastern Regional Institute of Science & Technology","address":"P.O. Nirjuli, District- Papumpare, Arunachal Pradesh\n                              Arunachal Pradesh-791 109","state":"Arunachal Pradesh "},{"university_name":"Central Institute of Buddhist Studies(CIBS)","address":"Choglamsar, Leh\n                              (Ladakh), Jammu &amp; Kashmir","state":"Jammu and Kashmir "},{"university_name":"Central Institute of Technology(CIT)","address":"Balagaon, BTAD\n                              Kokrajhar\n                                Assam","state":"Assam "}]}
-=======
 {
     "state": [
         {
@@ -625,4 +622,3 @@
         }
     ]
 }
->>>>>>> 5ab03fe2fa47eca1205bbe4dab53a84357f955ed

@@ -92,14 +92,7 @@ async function scrape_university(university_type) {
 
 //run these functions one at a time and then comment the other three
 // scrape_university('state');
-<<<<<<< HEAD
 // scrape_university('central')
 scrape_university('deemed');
 // scrape_university('private');
 
-
-=======
-scrape_university("central");
-// scrape_university('deemed')
-// scrape_university('private')
->>>>>>> 5ab03fe2fa47eca1205bbe4dab53a84357f955ed

@@ -83,16 +83,9 @@ app.get("/ugcofficial", (req, res) => {
 
 //fake university
 app.get("/fakeuniv", (req, res) => {
-  Fake_Univ.find({}, (err, docs) => {
-    if (err) {
-      console.log(err);
-    } else {
-      res.render("fakeuniv", { details: docs });
-      // console.log("working fake univ");
-    }
-  });
+  res.sendFile(path.join(__dirname, "../frontend/fake.html"));
 });
-
+console.log(path.join(__dirname, "../frontend/fake.html"));
 // POST reqquest
 app.post(
   "/official_signup",
@@ -177,35 +170,19 @@ app.get("/search_university", (req, res, next) => {
     }
   }
   if (correct_index != -1) {
-    // res.send({
-    //   success:true,
-    //   data:{
-    //     university:[
-    //       searchable_dataset.data[correct_index]
-    //     ]
-    //   },
-    //   errors:[]
-    // })
-    res.send(
-      // data:{
-      //   university:[
-      //     searchable_dataset.data[correct_index].university_name
-      //   ]
-      // }
-      // university: [searchable_dataset.data[correct_index].university_name],
-      "Searched University Is Approved By UGC"
-    );
+    res.render("searchresult", {
+      temp: "1",
+      universityname: [searchable_dataset.data[correct_index].university_name],
+      address: [searchable_dataset.data[correct_index].address],
+      state: [searchable_dataset.data[correct_index].state],
+    });
   } else {
-    res.send(
-      // success: false,
-      // data: {},
-      // errors: [
-      //   {
-      //     name: "couldn't find the university",
-      //   },
-      // ],
-      "Searched University Is Not Found In UGC Approved List Of University. Please Check In Fake University List Under Fake University Tag"
-    );
+    res.render("searchresult", {
+      temp: "0",
+      universityname: "NA",
+      address: "NA",
+      state: "NA",
+    });
   }
 });
 

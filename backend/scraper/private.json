@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "private": [
         {
             "university_name": "Acharaya N.G.Ranga Agricultural University",
@@ -178,10 +177,10 @@
         },
         {
             "university_name": "Shri Mata Vaishno Devi University",
-            "address": "SMVD University, Kakryal, Katra, J&amp;K\n                              Katra,J&amp;K",
+            "address": "SMVD University, Kakryal, Katra, J&amp;Katra,J&amp;K",
             "state": "Jammu and Kashmir "
-=======
-    "state": [
+        }, 
+
         {
             "university_name": "S.No"
         },
@@ -3754,7 +3753,7 @@
         },
         {
             "university_name": "Date of Visit "
->>>>>>> 5ab03fe2fa47eca1205bbe4dab53a84357f955ed
+
         }
     ]
 }

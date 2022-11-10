@@ -94,5 +94,4 @@ async function scrape_university(university_type) {
 // scrape_university('state');
 // scrape_university('central')
 scrape_university('deemed');
-// scrape_university('private');
 

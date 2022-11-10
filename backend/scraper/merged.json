@@ -2252,6 +2252,36 @@
             "university_name": "Sardar Vallabhbhai Patel Cluster University",
             "address": "Mandi",
             "state": "Himachal Pradesh "
+        },
+        {
+            "university_name": "SRM University",
+            "address": "Neerukonda Post Mangalagiri Mandal Guntur District Andhra Pradesh Mangalagiri Mandal Gantur District Andhra Pradesh-522240",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "university_name": "Centurion University of Technology and Management",
+            "address": "Tekkali Village Nelimarla Mandal Vizianagaram District Andhra Pradesh India Anandapuram Mandal Visakhapatnam Andhra Pradesh-535003",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "university_name": "VIT-AP University",
+            "address": "VIT AP University Ainavolu Village Thullur Mandalam Guntur District-522237 Amaravati Guntur Andhra Pradesh-522237",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "university_name": "KREA University",
+            "address": "5655, Central Expressway, Sri City ,Andhra Pradesh-517646",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "university_name": "Saveetha Amaravati University",
+            "address": "3rd Floor, Vaishnavi Complex Opp. Executive Club Vijayawada , Andhra Pradesh-520008",
+            "state": "Andhra Pradesh"
+        },
+        {
+            "university_name": "Bharatiya Engineering Science and Technology Innovation University",
+            "address": "Gownivaripalli, Gorantla Mandal, Anantapur , Andhra Pradesh",
+            "state": "Andhra Pradesh"
         }
     ]
 }

@@ -1,14 +1,34 @@
 {
     "state": [
         {
+            "university_name": "Central Tribal University of Andhra Pradesh",
+            "address": "Kondakarakam (PO), \n                                          Cantonment (SPO), \n                                            Vizianagaram",
+            "state": "Andhra Pradesh"
+        },
+        {
             "university_name": "Central University of Andhra Pradesh",
-            "address": "IT Incubation Centre Building,\n                                          JNTU Campus, Chinmaynagar,\n                                            Anantapur,",
+            "address": "Transit Campus, JNTU IT Incubation Centre, \n                                          Chinmaya Nagar\n                                            Anantapur,",
             "state": "Andhra Pradesh"
         },
         {
             "university_name": "National Sanskrit University( previously Rashtriya Sanskrit Vidyapeeth)",
             "address": "Tirupati - (A.P)",
             "state": "Andhra Pradesh"
+        },
+        {
+            "university_name": "Central University of Jammu",
+            "address": "Rahya-Suchani (Bagla)\n                                          District Samba\n                                            Jammu",
+            "state": "Jammu and Kashmir "
+        },
+        {
+            "university_name": "Central University of Kashmir",
+            "address": "Green Campus, \n                                          Duderhama Ganderbal, \n                                            Kashmir",
+            "state": "Jammu and Kashmir "
+        },
+        {
+            "university_name": "North Eastern Hill University",
+            "address": "NEHU Campus\n                                          Shillong",
+            "state": "Meghalaya "
         },
         {
             "university_name": "North Eastern Hill University",
@@ -22,7 +42,7 @@
         },
         {
             "university_name": "Central University of Kashmir",
-            "address": "Ganderbal\n                                          Sonwar (Near G.B. Pant Hospital)\n                                            Srinagar",
+            "address": "Green Campus, \n                                          Duderhama Ganderbal, \n                                            Kashmir",
             "state": "Jammu and Kashmir "
         },
         {
@@ -32,7 +52,7 @@
         },
         {
             "university_name": "Rajiv Gandhi University",
-            "address": "Rono Hills, Doimukh, Itanagar, Arunachal Pradesh\n                                          P.O. Doimukh,\n                                            Itanagar",
+            "address": "Rono Hills, \n                                          P.O. Doimukh,\n                                            Itanagar",
             "state": "Arunachal Pradesh "
         },
         {
@@ -56,18 +76,38 @@
             "state": "Tamil Nadu "
         },
         {
+            "university_name": "Assam University",
+            "address": "Post Box No.63,Assam University\n                                            Silchar",
+            "state": "Assam "
+        },
+        {
+            "university_name": "Tezpur University",
+            "address": "P.O. -Napaam,\n                                            Tezpur\n                                            Dist. Sonitpur",
+            "state": "Assam "
+        },
+        {
             "university_name": "Central University of Karnataka",
-            "address": "Aland Road, Kadaganchi, Dist. Kalaburagi\n                                          Gulbarga University, \n                                            Gulbarga",
+            "address": "Kadaganchi, Aland Road, \n                                          Aland Taluk Gulbarga (Dist.) \n                                            Gulbarga",
             "state": "Karnataka "
         },
         {
             "university_name": "Nagaland University",
-            "address": "HQ: Lumami\n                                          Dist: Zunheboto\n                                            Nagaland",
+            "address": "Campus Kohima \n                                          Headquarter Lumani\n                                            Nagaland",
+            "state": "Nagaland "
+        },
+        {
+            "university_name": "Central University of Karnataka",
+            "address": "Kadaganchi, Aland Road, \n                                          Aland Taluk Gulbarga (Dist.) \n                                            Gulbarga",
+            "state": "Karnataka "
+        },
+        {
+            "university_name": "Nagaland University",
+            "address": "Campus Kohima \n                                          Headquarter Lumani\n                                            Nagaland",
             "state": "Nagaland "
         },
         {
             "university_name": "Assam University",
-            "address": "P.O. Assam University\n                                          Silchar",
+            "address": "Post Box No.63,Assam University\n                                            Silchar",
             "state": "Assam "
         },
         {
@@ -77,17 +117,17 @@
         },
         {
             "university_name": "Tripura University",
-            "address": "Tripura University (A Central University) ,Suryamaninagar, West Tripura District\n                                          Agartala",
+            "address": "Suryamaninagar",
             "state": "Tripura "
         },
         {
             "university_name": "Central University of South Bihar",
-            "address": "Phaneeshwarnath Renu\n                                          Hindi Bhawan, Chhajjubagh \n                                            Patna",
+            "address": "SH-7, Gaya-Panchanpur Road, \n                                          Village – Karhara, Post- Fatehpur, P.S. – Tekari, \n                                            District-Gaya",
             "state": "Bihar "
         },
         {
             "university_name": "Mahatma Gandhi Central University",
-            "address": "Mahatma Gandhi Central University, Motihari, Bihar\n                                          Motihari\n                                            Distt.: East Champaran",
+            "address": "Camp Office : Opposite Circuit House\n                                          Motihari\n                                            Distt.: East Champaran",
             "state": "Bihar "
         },
         {
@@ -127,7 +167,7 @@
         },
         {
             "university_name": "University of Allahabad",
-            "address": "Allahabad",
+            "address": "Prayagraj ",
             "state": "Uttar Pradesh "
         },
         {
@@ -152,7 +192,7 @@
         },
         {
             "university_name": "Shri Lal Bahadur Shastri National Sanskrit University",
-            "address": "B-4,qutub Institutional Area,\n                                          New Delhi- 110 016",
+            "address": "Katwaria Sarai, New Mehrauli Road New Delhi\n                                          New Mehrauli Road \n                                            New Delhi",
             "state": "Delhi"
         },
         {
@@ -167,7 +207,7 @@
         },
         {
             "university_name": "Guru Ghasidas Vishwavidyalaya",
-            "address": "Bilaspur\n                                          Chhatisgarh",
+            "address": "Main Campus, Koni, \n                                          Bilaspur,",
             "state": "Chhattisgarh"
         },
         {
@@ -176,13 +216,13 @@
             "state": "Puducherry"
         },
         {
-            "university_name": "Hemwati Nandan Bahuguna Garhwal University",
+            "university_name": "Hemvati Nandan Bahuguna Garhwal University",
             "address": "HEMVATI NANDAN BAHUGUNA GARHWAL UNIVERSITY, SRINAGAR (GARHWAL), UTTARAKHAND\n                                          Garhwal",
             "state": "Uttarakhand "
         },
         {
             "university_name": "Central University of Gujarat",
-            "address": "Sector 29, Gandhinagar \n                                          Sector-2 A\n                                            Gandhinagar",
+            "address": "Near Jalaram Temple \n                                          Sector – 29\n                                            Gandhinagar",
             "state": "Gujarat "
         },
         {
@@ -192,12 +232,12 @@
         },
         {
             "university_name": "The Indira Gandhi National Tribal University",
-            "address": "Kapil Dhara Road ,Mekal Sadan \n                                          Amarkantak, Dist-Anuppur",
+            "address": "Makal Sadan \n                                          Amarkantak, Dist-Anuppur",
             "state": "Madhya Pradesh "
         },
         {
             "university_name": "Central University of Punjab",
-            "address": "Central University of Punjab VPO Ghudda, Distt Bathinda\n                                          Mansa Road,\n                                            Bathinda",
+            "address": "CVPO Ghudda\n                                          \n                                            Distt. Bathinda",
             "state": "Punjab "
         },
         {
@@ -212,17 +252,17 @@
         },
         {
             "university_name": "Mahatma Gandhi Antarrashtriya Hindi Vishwavidyalaya",
-            "address": "Post Box No.16,Panchtila\n                                          Umri Village Arvi Road\n                                            Wardha Mumbai",
+            "address": "Gandhi Hills, \n                                          Post- Hindi Vishwavidyalaya,\n                                            Wardha",
             "state": "Maharashtra "
         },
         {
             "university_name": "Central University of Rajasthan",
-            "address": "Bandarsindri, NH-8, Kishangarh, Ajmer\n                                          Dist-Ajmer-305817",
+            "address": "NH-8, Bandar Sindri, \n                                          Kishangarh \n                                            Dist-Ajmer",
             "state": "Rajasthan"
         },
         {
             "university_name": "English & Foreign Languages University",
-            "address": "Tarnaka, Hyderabad\n                                          Hyderabad",
+            "address": "Osmania University Campus \n                                          Hyderabad",
             "state": "Telangana"
         },
         {
@@ -247,7 +287,7 @@
         },
         {
             "university_name": "Manipur University",
-            "address": "Indo-Myanmar Raod, Canchipur, Imphal, Manipur",
+            "address": "Canchipur, \n                                          Imphal, \n                                            Manipur",
             "state": "Manipur"
         },
         {

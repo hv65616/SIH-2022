@@ -12,7 +12,7 @@
         },
         {
             "university_name": "Adikavi Nannaya University",
-            "address": "Rajaraja Narendra Nagar, NH-16, Rajahmundry, A.P.\n                              Rajahmundry",
+            "address": "Rajahmahendravaram,\n                              East Godavari District",
             "state": "Andhra Pradesh"
         },
         {
@@ -248,6 +248,11 @@
         {
             "university_name": "Maharashtra National Law University,",
             "address": "Training Institute(JOTI),\n                              Civil Lines, \n                                C P Club Road, Nagpur",
+            "state": "Maharashtra "
+        },
+        {
+            "university_name": "Maharashtra State Skills University",
+            "address": "1st, Floor, Elphinstone Technical High School\n                              3, Mahapalika Marg, Metro Chowk\n                                Mumbai",
             "state": "Maharashtra "
         },
         {
@@ -889,13 +894,13 @@
             "state": "Orissa "
         },
         {
-            "university_name": "National Law University",
-            "address": "Kathajodi Campus, \n                               Sec – 13,CDA\n                                Cuttack",
+            "university_name": "Maharaja Sriram Chandra Bhanja Deo University(Earlier North Orissa University)",
+            "address": "Sriram Chandra Vihar, Takatpur, Baripada, Odisha\n                              Bhuabaneswar",
             "state": "Orissa "
         },
         {
-            "university_name": "North Orissa University",
-            "address": "Sriram Chandra Vihar, Takatpur, Baripada, Odisha\n                              Bhuabaneswar",
+            "university_name": "National Law University",
+            "address": "Kathajodi Campus, \n                               Sec – 13,CDA\n                                Cuttack",
             "state": "Orissa "
         },
         {
@@ -969,8 +974,8 @@
             "state": "Uttar Pradesh "
         },
         {
-            "university_name": "Archarya Narendra Deo University of Agriculture & Technology",
-            "address": "Kumarganj,\n                              Faizabad",
+            "university_name": "Archarya Narendra Deva University of Agriculture & Technology",
+            "address": "Kumarganj,\n                              Ayodhya",
             "state": "Uttar Pradesh "
         },
         {
@@ -1056,6 +1061,11 @@
         {
             "university_name": "King Georges Medical University",
             "address": "King George Medical University, Shahmeena Road Chowk, Lucknow,",
+            "state": "Uttar Pradesh "
+        },
+        {
+            "university_name": "Maa Shakumbhari University",
+            "address": "Saharanpur, Punwarka\n                              Saharanpur",
             "state": "Uttar Pradesh "
         },
         {
@@ -1434,6 +1444,11 @@
             "state": "Punjab "
         },
         {
+            "university_name": "Sardar Beant Singh State University",
+            "address": "Gurdaspur",
+            "state": "Punjab "
+        },
+        {
             "university_name": "Shaheed Bhagat Singh University",
             "address": "Ferozepur",
             "state": "Punjab "
@@ -1479,6 +1494,11 @@
             "state": "West Bengal "
         },
         {
+            "university_name": "Biswa Bangla Biswabidyalay",
+            "address": "Bolpur, Birbhum",
+            "state": "West Bengal "
+        },
+        {
             "university_name": "Burdwan University",
             "address": "Rajbati\n                              Burdwan",
             "state": "West Bengal "
@@ -1496,6 +1516,11 @@
         {
             "university_name": "Dakshin Dinajpur University",
             "address": "North Chakbhabani (near LIC office)\n                              Balurghat, Dakshin Dinajpur",
+            "state": "West Bengal "
+        },
+        {
+            "university_name": "Darjeeling Hills University",
+            "address": "Jogighat Mangpu\n                              Dist.- Darjeeling,",
             "state": "West Bengal "
         },
         {
@@ -1684,6 +1709,11 @@
             "state": "Gujarat "
         },
         {
+            "university_name": "Gujarat Natural Farming and Organic Agricultural University",
+            "address": "ATIC Building, Borsad Chokdi,\n                              Anad,",
+            "state": "Gujarat "
+        },
+        {
             "university_name": "Gujarat Technological University",
             "address": "Nr.Vishwakarma Government Engineering College Nr.Visat Three Roads, Visat - Gandhinagar Highway Chandkheda, Ahmedabad \n                              Nr.Visat Three Roads, Visat - Gandhinagar Highway\n                                Chandkheda, Ahmedabad",
             "state": "Gujarat "
@@ -1729,8 +1759,8 @@
             "state": "Gujarat "
         },
         {
-            "university_name": "Krishnakumarsinhji Bhavnagar University",
-            "address": "Gauri Shankar Lake Road,\n                              Bhavnagar",
+            "university_name": "Maharaja Krishnakumarsinji Bhavnagar University",
+            "address": "S.V. Patel Campus,\n                              Gaurishanker Lake Road,\n                                Bhavnagar",
             "state": "Gujarat "
         },
         {
@@ -1774,8 +1804,8 @@
             "state": "Gujarat "
         },
         {
-            "university_name": "Punjab University",
-            "address": "Panjab University, Sector-14, Chandigarh - 160 014, India",
+            "university_name": "Panjab University",
+            "address": "Sector-14/25\n                              Chandigarh",
             "state": "Chandigarh "
         },
         {
@@ -1829,7 +1859,7 @@
             "state": "Rajasthan"
         },
         {
-            "university_name": "Maharishi Dayanand Saraswati University",
+            "university_name": "Maharshi Dayanand Saraswati University",
             "address": "Pushkar Bye Pass\n                              Ajmer",
             "state": "Rajasthan"
         },
@@ -1949,6 +1979,11 @@
             "state": "Telangana"
         },
         {
+            "university_name": "P. V. Narsimha Rao Telangana Veterinary University",
+            "address": "Administrative Office, Rajendranagar, \n                              Hyderabad",
+            "state": "Telangana"
+        },
+        {
             "university_name": "Palamuru University",
             "address": "Ayyappa Complex\n                              Opp. Police Head Quarters,\n                                Mahabubnagar-509001",
             "state": "Telangana"
@@ -1976,11 +2011,6 @@
         {
             "university_name": "Sri Konda Laxman Telangana State Horticultural University",
             "address": "SKLTSHU,Mulugu, Siddipet district, Telangana -502279.\n                              Hyderabad",
-            "state": "Telangana"
-        },
-        {
-            "university_name": "Sri P V Narsimha Rao Telangana Veterinary University",
-            "address": "Administrative Office, Rajendranagar, Hyderabad, Telangana State\n                              Hyderabad",
             "state": "Telangana"
         },
         {
@@ -2249,8 +2279,8 @@
             "state": "Himachal Pradesh "
         },
         {
-            "university_name": "Sardar Vallabhbhai Patel Cluster University",
-            "address": "Mandi",
+            "university_name": "Sardar Patel University Mandi",
+            "address": "Vallabh Government College Campus\n                              Administrative Block\n                                Mandi Sadar, Mandi",
             "state": "Himachal Pradesh "
         },
         {
@@ -2467,8 +2497,7 @@
             "university_name": "ITM University",
             "address": "Uparwara, Teh.- Abhanpur Naya Raipur, Distt. Raipur , Chhattisgarh-493 661",
             "state": "Chhattisgarh"
-        }
-        ,
+        },
         {
             "university_name": "RK University",
             "address": "RK University, Bhavnagar Highway,Kasturbadham, Rajkot - 360020, Gujarat, India. Rajkot ,Gujarat -360020",
